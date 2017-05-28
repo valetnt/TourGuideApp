@@ -8,13 +8,40 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+    <!-- Main Activity -->
+    <style name="ListItemTextView">
+        <item name="android:textColor">@color/colorCardText</item>
+        <item name="android:textSize">@dimen/list_item_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-light</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <!-- Location Item -->
+    <style name="LocationItemTextView_title">
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="android:textSize">@dimen/location_item_text_size_big</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="LocationItemTextView_details_bold">
+        <item name="android:textColor">@color/colorDetailsDarker</item>
+        <item name="android:textSize">@dimen/location_item_text_size_small</item>
+        <item name="android:paddingTop">@dimen/location_item_padding</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="LocationItemTextView_details">
+        <item name="android:textColor">@color/colorDetails</item>
+        <item name="android:paddingRight">@dimen/location_item_padding</item>
+        <item name="android:textSize">@dimen/location_item_text_size_medium</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="LocationItemCard">
+        <item name="android:textColor">@color/colorDetailsDarker</item>
+        <item name="android:textSize">@dimen/location_item_text_size_small</item>
+        <item name="android:paddingRight">@dimen/location_item_card_padding</item>
+    </style>
 
 </resources>

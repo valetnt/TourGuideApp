@@ -1,16 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!-- Android Material Design Spec -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="appbar_padding_top">8dp</dimen>
 
-    <!-- GridItem -->
-    <dimen name="grid_item_size">96dp</dimen>
-    <dimen name="grid_spacing">10dp</dimen>
+    <!-- Main Activity (Home) -->
+    <dimen name="list_item_size">80dp</dimen>
+    <dimen name="list_item_text_size">20sp</dimen>
+    <dimen name="corner_radius">4dp</dimen>
 
-    <!-- AttractionsListItem -->
-    <dimen name="list_by_category_item_size">96dp</dimen>
-    <dimen name="list_by_category_item_margin">16dp</dimen>
-    <dimen name="list_by_category_img_padding">8dp</dimen>
+    <!-- Location Item -->
+    <dimen name="location_item_size">120dp</dimen>
+    <dimen name="location_item_padding">4dp</dimen>
+    <dimen name="location_item_text_size_big">16sp</dimen>
+    <dimen name="location_item_text_size_medium">13sp</dimen>
+    <dimen name="location_item_text_size_small">12sp</dimen>
+    <dimen name="location_item_horizontal_margin">16dp</dimen>
+    <dimen name="location_item_vertical_margin">6dp</dimen>
+    <dimen name="location_item_card_height">20dp</dimen>
+    <dimen name="location_item_card_padding">4dp</dimen>
+    <dimen name="location_corner_radius">2dp</dimen>
 
 </resources>

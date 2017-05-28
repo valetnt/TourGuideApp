@@ -1,9 +1,20 @@
 <resources>
+
     <string name="app_name">Tour Guide App</string>
-    <string name="action_settings">Settings</string>
-    <string name="section_label">Section Nr.%1$d</string>
 
-    <string name="loremIpsum">Lorem Ipsum</string>
+    <!-- Main Activity (Home) -->
+    <string name="cover_img_content_descr">Cover Image</string>
+    <string name="list_item_img_content_descr">Category Image Thumbnail</string>
+    <string name="activity_main_list_txt_item">Category</string>
+    <string name="activity_main_list_txt_item1">Itineraries</string>
+    <string name="activity_main_list_txt_item2">Tourist Attractions</string>
+    <string name="activity_main_list_txt_item3">Museums</string>
+    <string name="activity_main_list_txt_item4">Food \u0026 Drinks</string>
+    <string name="activity_main_list_txt_item5">Useful Links</string>
 
-    <string name="list_by_category">List By Category</string>
+    <!-- Location Item -->
+    <string name="location_img_content_descr">Location Image Thumbnail</string>
+    <string name="location_item_icon_descr">Maps Icon</string>
+    <string name="seeInMaps">See in Maps</string>
+
 </resources>

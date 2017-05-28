@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/LocationItemTextView_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/location_item_padding"
+        android:paddingTop="@dimen/location_item_padding"
+        android:text="Palazzo della Ragione" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/location_item_size"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/location_item_size"
+            android:layout_height="@dimen/location_item_size"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/location_img_content_descr"
+                android:scaleType="centerCrop"
+                android:src="@drawable/activity_main_list_item2" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/location_item_padding"
+                app:cardCornerRadius="@dimen/location_corner_radius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/mapsIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/location_item_card_height"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/location_item_icon_descr"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_place" />
+
+                    <TextView
+                        style="@style/LocationItemCard"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/seeInMaps" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/location_item_vertical_margin"
+            android:layout_marginEnd="@dimen/location_item_horizontal_margin"
+            android:layout_marginLeft="@dimen/location_item_horizontal_margin"
+            android:layout_marginRight="@dimen/location_item_horizontal_margin"
+            android:layout_marginStart="@dimen/location_item_horizontal_margin"
+            android:layout_marginTop="@dimen/location_item_vertical_margin"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/openings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/LocationItemTextView_details_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Openings:" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LocationItemTextView_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Apr - Sep: "
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/openings1"
+                        style="@style/LocationItemTextView_details"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="8.30 - 18.30" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LocationItemTextView_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Oct - Mar: "
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/openings2"
+                        style="@style/LocationItemTextView_details"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="9.30 - 16.30" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/furtherDetails"
+                    style="@style/LocationItemTextView_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/contact"
+                    style="@style/LocationItemTextView_details_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact:" />
+
+                <TextView
+                    android:id="@+id/contact_1"
+                    style="@style/LocationItemTextView_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact1:" />
+
+                <TextView
+                    android:id="@+id/contact_2"
+                    style="@style/LocationItemTextView_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact2:" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
