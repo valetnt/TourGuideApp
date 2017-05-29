@@ -44,4 +44,32 @@
         <item name="android:paddingRight">@dimen/location_item_card_padding</item>
     </style>
 
+    <!-- Itinerary Item -->
+    <style name="ItineraryItemTextView_title">
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="android:textSize">@dimen/location_item_text_size_big</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="ItineraryItemTextView_details_bold">
+        <item name="android:textColor">@color/colorDetailsDarker</item>
+        <item name="android:textSize">@dimen/location_item_text_size_small</item>
+        <item name="android:paddingTop">@dimen/location_item_padding</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ItineraryItemTextView_details">
+        <item name="android:textColor">@color/colorDetails</item>
+        <item name="android:paddingRight">@dimen/location_item_padding</item>
+        <item name="android:textSize">@dimen/location_item_text_size_medium</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="ItineraryItemCard">
+        <item name="android:textColor">@color/colorDetailsDarker</item>
+        <item name="android:textSize">@dimen/location_item_text_size_small</item>
+        <item name="android:paddingRight">@dimen/location_item_card_padding</item>
+    </style>
+
 </resources>

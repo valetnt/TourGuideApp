@@ -17,4 +17,19 @@
     <string name="location_item_icon_descr">Maps Icon</string>
     <string name="seeInMaps">See in Maps</string>
 
+    <!-- Itineraries -->
+    <string name="activity_itineraries_name">Itineraries</string>
+
+    <!-- Itinerary Item -->
+    <string name="itinerary_img_content_descr">Itinerary Image Thumbnail</string>
+    <string name="itinerary_item_icon_descr">Maps Icon</string>
+    <string name="itinerary_section_title">Section Title</string>
+    <string name="itinerary_section_description">Section Description</string>
+    <string name="itinerary_section_title1">Euganean Hills</string>
+    <string name="itinerary_section_description1">Section Description</string>
+    <string name="itinerary_section_title2">Villas along the Brenta River</string>
+    <string name="itinerary_section_description2">Section Description</string>
+    <string name="itinerary_section_title3">Strolling in the city center</string>
+    <string name="itinerary_section_description3">Section Description</string>
+
 </resources>

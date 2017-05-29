@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/ItineraryItemTextView_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/itinerary_item_padding"
+        android:paddingTop="@dimen/itinerary_item_padding"
+        android:text="Itinerary 1: Biking on the Euganean Hills" />
+
+    <LinearLayout
+        android:baselineAligned="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/itinerary_item_size"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/itinerary_item_size"
+            android:layout_height="@dimen/itinerary_item_size"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/itinerary_img_content_descr"
+                android:scaleType="centerCrop"
+                android:src="@drawable/activity_main_list_item1" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/first_icon"
+                android:layout_width="@dimen/itinerary_item_card_height"
+                android:layout_height="@dimen/itinerary_item_card_height"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/itinerary_item_padding"
+                app:cardCornerRadius="@dimen/itinerary_corner_radius">
+
+                    <ImageView
+                        android:id="@+id/icon1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/itinerary_item_icon_descr"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_directions_walk" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="@dimen/itinerary_item_card_height"
+                android:layout_height="@dimen/itinerary_item_card_height"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/first_icon"
+                android:layout_marginRight="@dimen/itinerary_item_padding"
+                android:layout_marginEnd="@dimen/itinerary_item_padding"
+                app:cardCornerRadius="@dimen/itinerary_corner_radius">
+
+                <ImageView
+                    android:id="@+id/icon2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/itinerary_item_icon_descr"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_directions_bike" />
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/itinerary_item_horizontal_margin"
+            android:layout_marginLeft="@dimen/itinerary_item_horizontal_margin"
+            android:layout_marginRight="@dimen/itinerary_item_horizontal_margin"
+            android:layout_marginStart="@dimen/itinerary_item_horizontal_margin"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/details_header"
+                    style="@style/ItineraryItemTextView_details_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Approximate Time:" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/details_header_1"
+                        style="@style/ItineraryItemTextView_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Short Route: "
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/details_content_1"
+                        style="@style/ItineraryItemTextView_details"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="3 hours" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/details_header_2"
+                        style="@style/ItineraryItemTextView_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Long Route: "
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/details_content_2"
+                        style="@style/ItineraryItemTextView_details"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="5 hours" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/further_details"
+                    style="@style/ItineraryItemTextView_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/interesting_to_see"
+                    style="@style/ItineraryItemTextView_details_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Points of Interest:" />
+
+                <TextView
+                    android:id="@+id/interesting_to_see_details"
+                    style="@style/ItineraryItemTextView_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Villa Tal dei Tali, Castello Bellissimo, Belvedere, Escursione" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
