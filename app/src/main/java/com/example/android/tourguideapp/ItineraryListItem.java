@@ -1,5 +1,7 @@
 package com.example.android.tourguideapp;
 
+import android.support.annotation.Nullable;
+
 public class ItineraryListItem {
 
     private String mName;
@@ -12,11 +14,44 @@ public class ItineraryListItem {
     private String mToSee;
     private String mToSeeContent;
     private int mImageID;
-    private int mIcon1ID;
-    private int mIcon2ID;
+    private int mIcon1ID = -1;
+    private int mIcon2ID = -1;
 
     public ItineraryListItem(String name, String header, String header1, String content1,
-                             String header2, String content2, String furtherDetails,
+                             String header2, String content2, @Nullable String furtherDetails,
+                             String toSee, String toSeeContent, int image) {
+
+        mName = name;
+        mDetails = header;
+        mDetailsHeader1 = header1;
+        mDetailsContent1 = content1;
+        mDetailsHeader2 = header2;
+        mDetailsContent2 = content2;
+        mFurtherDetails = furtherDetails;
+        mToSee = toSee;
+        mToSeeContent = toSeeContent;
+        mImageID = image;
+    }
+
+    public ItineraryListItem(String name, String header, String header1, String content1,
+                             String header2, String content2, @Nullable String furtherDetails,
+                             String toSee, String toSeeContent, int image, int icon1) {
+
+        mName = name;
+        mDetails = header;
+        mDetailsHeader1 = header1;
+        mDetailsContent1 = content1;
+        mDetailsHeader2 = header2;
+        mDetailsContent2 = content2;
+        mFurtherDetails = furtherDetails;
+        mToSee = toSee;
+        mToSeeContent = toSeeContent;
+        mImageID = image;
+        mIcon1ID = icon1;
+    }
+
+    public ItineraryListItem(String name, String header, String header1, String content1,
+                             String header2, String content2, @Nullable String furtherDetails,
                              String toSee, String toSeeContent, int image, int icon1, int icon2) {
 
         mName = name;
@@ -58,6 +93,9 @@ public class ItineraryListItem {
     }
 
     public String getFurtherDetails() {
+        if(mFurtherDetails==null){
+            return "";
+        }
         return mFurtherDetails;
     }
 

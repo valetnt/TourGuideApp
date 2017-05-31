@@ -22,16 +22,18 @@
     <dimen name="location_item_card_padding">4dp</dimen>
     <dimen name="location_corner_radius">2dp</dimen>
 
+    <!-- Itineraries Activity -->
+    <dimen name="itinerary_activity_vertical_margin">6dp</dimen>
+
     <!-- Itinerary Item -->
     <dimen name="itinerary_item_size">120dp</dimen>
-    <dimen name="itinerary_item_padding">4dp</dimen>
+    <dimen name="itinerary_item_padding">6dp</dimen>
     <dimen name="itinerary_item_text_size_big">16sp</dimen>
     <dimen name="itinerary_item_text_size_medium">13sp</dimen>
     <dimen name="itinerary_item_text_size_small">12sp</dimen>
     <dimen name="itinerary_item_horizontal_margin">16dp</dimen>
-    <dimen name="itinerary_item_vertical_margin">6dp</dimen>
     <dimen name="itinerary_item_card_height">20dp</dimen>
-    <dimen name="itinerary_item_card_padding">4dp</dimen>
+    <dimen name="itinerary_item_card_padding">2dp</dimen>
     <dimen name="itinerary_corner_radius">2dp</dimen>
 
 </resources>

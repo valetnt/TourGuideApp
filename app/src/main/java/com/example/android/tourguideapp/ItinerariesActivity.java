@@ -17,22 +17,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import static com.example.android.tourguideapp.MainActivity.FIRST_ITEM;
-
 public class ItinerariesActivity extends AppCompatActivity {
-
-    public static final String SECTION1 =
-            "Section 1";
-    public static final String SECTION2 =
-            "Section 2";
-    public static final String SECTION3 =
-            "Section 3";
-    public static final String SECTION1_DESCR =
-            "Section 1 Description";
-    public static final String SECTION2_DESCR =
-            "Section 2 Description";
-    public static final String SECTION3_DESCR =
-            "Section 3 Description";
 
     private FragmentPagerAdapter mFragmentPagerAdapter;
 
@@ -42,7 +27,7 @@ public class ItinerariesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_itineraries);
 
         ActionBar toolbar = getSupportActionBar();
-        toolbar.setTitle(FIRST_ITEM);
+        toolbar.setTitle(getString(R.string.activity_main_list_txt_item1));
         toolbar.setDisplayHomeAsUpEnabled(true);
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.container);
@@ -53,14 +38,23 @@ public class ItinerariesActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
 
-        //tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(viewPager));
-
     }
 
     public static class ItinerariesFragment extends Fragment {
 
+        public static final String SECTION = "SECTION";
+
         public ItinerariesFragment() {
             // empty constructor is required
+        }
+
+        public static ItinerariesFragment newInstance(int section) {
+
+            Bundle args = new Bundle();
+            args.putInt(SECTION, section);
+            ItinerariesFragment fragment = new ItinerariesFragment();
+            fragment.setArguments(args);
+            return fragment;
         }
 
         @Nullable
@@ -68,44 +62,111 @@ public class ItinerariesActivity extends AppCompatActivity {
         public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                                  @Nullable Bundle savedInstanceState) {
 
-            View rootView = inflater.inflate(R.layout.fragment, container, false);
+            switch (getArguments().getInt(SECTION)) {
+                case 1:
 
-            TextView sectionTitle = (TextView) rootView.findViewById(R.id.section_title);
-            TextView sectionDescription = (TextView) rootView.findViewById(R.id.section_description);
+                    View rootView1 = inflater.inflate(R.layout.itineraries_fragment, container, false);
 
-            sectionTitle.setText(SECTION1);
-            sectionDescription.setText(SECTION1_DESCR);
+                    TextView sectionTitle1 = (TextView) rootView1.findViewById(R.id.section_title);
+                    TextView sectionDescription1 = (TextView) rootView1.findViewById(R.id.section_description);
 
-            ArrayList<ItineraryListItem> itineraries = new ArrayList<>();
-            itineraries.add(new ItineraryListItem("Itinerary 1: Biking on the Euganean Hills",
-                    "Approximate Time:", "Short Route: ", "3 hours", "Long Route: ", "5 hours", "",
-                    "Points of Interest:",
-                    "Villa Tal dei Tali, Castello Bellissimo, Belvedere, Escursione",
-                    R.drawable.activity_main_list_item1,
-                    R.drawable.ic_directions_bike, R.drawable.ic_directions_walk));
+                    ListView listView1 = (ListView) rootView1.findViewById(R.id.list);
 
-            itineraries.add(new ItineraryListItem("Itinerary 2: Arqua' Petrarca",
-                    "Approximate Time:", "Short Route: ", "3 hours", "Long Route: ", "5 hours", "",
-                    "Points of Interest:",
-                    "Villa Tal dei Tali, Castello Bellissimo, Belvedere, Escursione",
-                    R.drawable.activity_main_list_item1,
-                    R.drawable.ic_directions_bike, R.drawable.ic_directions_walk));
+                    sectionTitle1.setText(getString(R.string.itinerary_section_title1));
+                    sectionDescription1.setText(getString(R.string.itinerary_section_description1));
 
-            itineraries.add(new ItineraryListItem("Itinerary 3: Monselice",
-                    "Approximate Time:", "Short Route: ", "3 hours", "Long Route: ", "5 hours", "",
-                    "Points of Interest:",
-                    "Villa Tal dei Tali, Castello Bellissimo, Belvedere, Escursione",
-                    R.drawable.activity_main_list_item1,
-                    R.drawable.ic_directions_bike, R.drawable.ic_directions_walk));
+                    ArrayList<ItineraryListItem> itineraries1 = new ArrayList<>();
+                    itineraries1.add(new ItineraryListItem("Itinerary 1: Biking on the Euganean Hills",
+                            "Approximate Time:", "Short Route: ", "3 hours", "Long Route: ",
+                            "5 hours", null, "Points of Interest:",
+                            "Villa Tal dei Tali, Castello Bellissimo, Belvedere, Escursione",
+                            R.drawable.activity_main_list_item1,
+                            R.drawable.ic_directions_bike, R.drawable.ic_directions_walk));
 
-            ListView listView = (ListView) rootView.findViewById(R.id.list);
-            listView.setAdapter(new ItineraryListAdapter(getContext(), itineraries));
+                    itineraries1.add(new ItineraryListItem("Itinerary 2: Arqua' Petrarca",
+                            "Approximate Time:", "Short Route: ", "3 hours", "Long Route: ",
+                            "5 hours", null, "Points of Interest:",
+                            "Villa Tal dei Tali, Castello Bellissimo, Belvedere, Escursione",
+                            R.drawable.activity_main_list_item1,
+                            R.drawable.ic_directions_bike, R.drawable.ic_directions_walk));
 
-            return rootView;
+                    itineraries1.add(new ItineraryListItem("Itinerary 3: Monselice",
+                            "Approximate Time:", "Short Route: ", "3 hours", "Long Route: ",
+                            "5 hours", null, "Points of Interest:",
+                            "Villa Tal dei Tali, Castello Bellissimo, Belvedere, Escursione",
+                            R.drawable.activity_main_list_item1,
+                            R.drawable.ic_directions_bike, R.drawable.ic_directions_walk));
+
+                    listView1.setAdapter(new ItineraryListAdapter(getContext(), itineraries1));
+
+                    return rootView1;
+
+                case 2:
+
+                    View rootView2 = inflater.inflate(R.layout.itineraries_fragment, container, false);
+
+                    TextView sectionTitle2 = (TextView) rootView2.findViewById(R.id.section_title);
+                    TextView sectionDescription2 = (TextView) rootView2.findViewById(R.id.section_description);
+
+                    ListView listView2 = (ListView) rootView2.findViewById(R.id.list);
+
+                    sectionTitle2.setText(getString(R.string.itinerary_section_title2));
+                    sectionDescription2.setText(getString(R.string.itinerary_section_description2));
+
+                    ArrayList<ItineraryListItem> itineraries2 = new ArrayList<>();
+                    itineraries2.add(new ItineraryListItem("Itinerary 1: Villas along the Brenta river",
+                            "Approximate Time:", "Short Route: ", "3 hours", "Long Route: ",
+                            "5 hours", null, "Points of Interest:",
+                            "Villa Tal dei Tali, Castello Bellissimo, Belvedere, Escursione",
+                            R.drawable.activity_main_list_item2));
+
+                    itineraries2.add(new ItineraryListItem("Itinerary 2: Cittadella",
+                            "Approximate Time:", "Short Route: ", "3 hours", "Long Route: ",
+                            "5 hours", null, "Points of Interest:",
+                            "Villa Tal dei Tali, Castello Bellissimo, Belvedere, Escursione",
+                            R.drawable.activity_main_list_item2));
+
+                    listView2.setAdapter(new ItineraryListAdapter(getContext(), itineraries2));
+
+                    return rootView2;
+
+                case 3:
+
+                    View rootView3 = inflater.inflate(R.layout.itineraries_fragment, container, false);
+
+                    TextView sectionTitle3 = (TextView) rootView3.findViewById(R.id.section_title);
+                    TextView sectionDescription3 = (TextView) rootView3.findViewById(R.id.section_description);
+
+                    ListView listView3 = (ListView) rootView3.findViewById(R.id.list);
+
+                    sectionTitle3.setText(getString(R.string.itinerary_section_title3));
+                    sectionDescription3.setText(getString(R.string.itinerary_section_description3));
+
+                    ArrayList<ItineraryListItem> itineraries3 = new ArrayList<>();
+                    itineraries3.add(new ItineraryListItem("Itinerary 1: Prato della Valle",
+                            "Approximate Time:", "Short Route: ", "3 hours", "Long Route: ",
+                            "5 hours", null, "Points of Interest:",
+                            "Villa Tal dei Tali, Castello Bellissimo, Belvedere, Escursione",
+                            R.drawable.activity_main_list_item3, R.drawable.ic_directions_walk));
+
+                    itineraries3.add(new ItineraryListItem("Itinerary 2: Medieval Padua",
+                            "Approximate Time:", "Short Route: ", "3 hours", "Long Route: ",
+                            "5 hours", null, "Points of Interest:",
+                            "Villa Tal dei Tali, Castello Bellissimo, Belvedere, Escursione",
+                            R.drawable.activity_main_list_item3, R.drawable.ic_directions_walk));
+
+                    listView3.setAdapter(new ItineraryListAdapter(getContext(), itineraries3));
+
+                    return rootView3;
+
+                default:
+
+                    return null;
+            }
         }
     }
 
-    public static class ItinerariesFragmentPagerAdapter extends FragmentPagerAdapter {
+    public class ItinerariesFragmentPagerAdapter extends FragmentPagerAdapter {
 
         public ItinerariesFragmentPagerAdapter(FragmentManager fm) {
             super(fm);
@@ -120,31 +181,22 @@ public class ItinerariesActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return SECTION1;
+                    return getString(R.string.itinerary_section_short_title1);
                 case 1:
-                    return SECTION1;
+                    return getString(R.string.itinerary_section_short_title2);
                 case 2:
-                    return SECTION1;
+                    return getString(R.string.itinerary_section_short_title3);
                 default:
-                    return SECTION1;
+                    return getString(R.string.itinerary_section_short_title1);
             }
         }
 
         @Override
         public Fragment getItem(int position) {
-
-            switch (position) {
-                case 0:
-                    return new ItinerariesFragment();
-                case 1:
-                    return new ItinerariesFragment();
-                case 2:
-                    return new ItinerariesFragment();
-                default:
-                    return new ItinerariesFragment();
-            }
-
+            // positions start from 0, but we want sections to start from 1
+            return ItinerariesFragment.newInstance(position + 1);
         }
-    }
 
+    }
 }
+

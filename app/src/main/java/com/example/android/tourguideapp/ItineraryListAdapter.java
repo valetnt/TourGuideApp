@@ -13,10 +13,9 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class ItineraryListAdapter extends ArrayAdapter<ItineraryListItem>{
+public class ItineraryListAdapter extends ArrayAdapter<ItineraryListItem> {
 
-    public ItineraryListAdapter(@NonNull Context context, @NonNull List<ItineraryListItem> objects)
-    {
+    public ItineraryListAdapter(@NonNull Context context, @NonNull List<ItineraryListItem> objects) {
         // We pass 0 as resource ID because we are going to inflate a custom layout
         super(context, 0, objects);
     }
@@ -28,7 +27,7 @@ public class ItineraryListAdapter extends ArrayAdapter<ItineraryListItem>{
         // If the view already exists, then recycle it
         // Else, inflate the layout from file "itinerary_item.xml
         View rootView = convertView;
-        if(rootView == null) {
+        if (rootView == null) {
             rootView = LayoutInflater.from(getContext()).inflate(R.layout.itinerary_item, parent,
                     false);
         }
@@ -45,17 +44,33 @@ public class ItineraryListAdapter extends ArrayAdapter<ItineraryListItem>{
         TextView details_header2 = (TextView) rootView.findViewById(R.id.details_header_2);
         TextView details_content2 = (TextView) rootView.findViewById(R.id.details_content_2);
         TextView furtherDetails = (TextView) rootView.findViewById(R.id.further_details);
+        TextView interesting_header = (TextView) rootView.findViewById(R.id.interesting_to_see);
+        TextView interesting_content = (TextView) rootView.findViewById(R.id.interesting_to_see_details);
 
         name.setText(currentItem.getName());
         image.setImageResource(currentItem.getImageID());
-        icon1.setImageResource(currentItem.getIcon1ID());
-        icon2.setImageResource(currentItem.getIcon2ID());
         details.setText(currentItem.getDetails());
         details_header1.setText(currentItem.getDetailsHeader1());
         details_header2.setText(currentItem.getDetailsHeader2());
         details_content1.setText(currentItem.getDetailsContent1());
         details_content2.setText(currentItem.getDetailsContent2());
         furtherDetails.setText(currentItem.getFurtherDetails());
+        interesting_header.setText(currentItem.getToSee());
+        interesting_content.setText(currentItem.getToSeeContent());
+
+        if (currentItem.getIcon1ID() == -1) {
+            ((View) icon1.getParent()).setVisibility(View.GONE);
+        } else {
+            ((View) icon1.getParent()).setVisibility(View.VISIBLE);
+            icon1.setImageResource(currentItem.getIcon1ID());
+        }
+
+        if (currentItem.getIcon2ID() == -1) {
+            ((View) icon2.getParent()).setVisibility(View.GONE);
+        } else {
+            ((View) icon2.getParent()).setVisibility(View.VISIBLE);
+            icon2.setImageResource(currentItem.getIcon2ID());
+        }
 
         return rootView;
     }

@@ -31,5 +31,8 @@
     <string name="itinerary_section_description2">Section Description</string>
     <string name="itinerary_section_title3">Strolling in the city center</string>
     <string name="itinerary_section_description3">Section Description</string>
+    <string name="itinerary_section_short_title1">Sports</string>
+    <string name="itinerary_section_short_title2">Villas</string>
+    <string name="itinerary_section_short_title3">City Center</string>
 
 </resources>
