@@ -12,12 +12,18 @@
     <string name="activity_main_list_txt_item4">Food \u0026 Drinks</string>
     <string name="activity_main_list_txt_item5">Useful Links</string>
 
+    <!-- Attractions Activity -->
+    <string name="activity_attractions_name">Tourist Attractions</string>
+
+    <!-- Museums Activity -->
+    <string name="activity_museums_name">Museums</string>
+
     <!-- Location Item -->
     <string name="location_img_content_descr">Location Image Thumbnail</string>
     <string name="location_item_icon_descr">Maps Icon</string>
     <string name="seeInMaps">See in Maps</string>
 
-    <!-- Itineraries -->
+    <!-- Itineraries Activity -->
     <string name="activity_itineraries_name">Itineraries</string>
 
     <!-- Itinerary Item -->

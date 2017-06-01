@@ -1,5 +1,6 @@
 package com.example.android.tourguideapp;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -39,10 +40,23 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
                 if(((MainListItem)parent.getAdapter().getItem(position)).getText().equals(
                         getString(R.string.activity_main_list_txt_item1)))
                 {
                     Intent intent = new Intent(MainActivity.this, ItinerariesActivity.class);
+                    startActivity(intent);
+
+                } else if(((MainListItem)parent.getAdapter().getItem(position)).getText().equals(
+                        getString(R.string.activity_main_list_txt_item2))) {
+
+                    Intent intent = new Intent(MainActivity.this, AttractionsActivity.class);
+                    startActivity(intent);
+
+                }  else if(((MainListItem)parent.getAdapter().getItem(position)).getText().equals(
+                        getString(R.string.activity_main_list_txt_item3))) {
+
+                    Intent intent = new Intent(MainActivity.this, MuseumsActivity.class);
                     startActivity(intent);
                 }
             }

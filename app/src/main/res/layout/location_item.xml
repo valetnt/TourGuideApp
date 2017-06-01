@@ -33,13 +33,14 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/activity_main_list_item2" />
 
-            <android.support.v7.widget.CardView
+            <FrameLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_margin="@dimen/location_item_padding"
-                app:cardCornerRadius="@dimen/location_corner_radius">
+                android:background="@drawable/location_frame_background"
+                android:padding="@dimen/location_item_frame_padding"
+                android:layout_margin="@dimen/location_item_padding">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -49,14 +50,14 @@
                     <ImageView
                         android:id="@+id/mapsIcon"
                         android:layout_width="wrap_content"
-                        android:layout_height="@dimen/location_item_card_height"
+                        android:layout_height="@dimen/location_item_frame_height"
                         android:layout_gravity="center"
                         android:contentDescription="@string/location_item_icon_descr"
                         android:scaleType="centerInside"
                         android:src="@drawable/ic_place" />
 
                     <TextView
-                        style="@style/LocationItemCard"
+                        style="@style/LocationItemFrame"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -66,19 +67,18 @@
 
                 </LinearLayout>
 
-            </android.support.v7.widget.CardView>
+            </FrameLayout>
 
         </RelativeLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/location_item_vertical_margin"
+            android:layout_marginBottom="@dimen/location_item_padding"
             android:layout_marginEnd="@dimen/location_item_horizontal_margin"
             android:layout_marginLeft="@dimen/location_item_horizontal_margin"
             android:layout_marginRight="@dimen/location_item_horizontal_margin"
             android:layout_marginStart="@dimen/location_item_horizontal_margin"
-            android:layout_marginTop="@dimen/location_item_vertical_margin"
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -101,6 +101,7 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:id="@+id/openings_header_1"
                         style="@style/LocationItemTextView_details"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -108,7 +109,7 @@
                         android:textStyle="italic" />
 
                     <TextView
-                        android:id="@+id/openings1"
+                        android:id="@+id/openings_content_1"
                         style="@style/LocationItemTextView_details"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -123,6 +124,7 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:id="@+id/openings_header_2"
                         style="@style/LocationItemTextView_details"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -130,7 +132,7 @@
                         android:textStyle="italic" />
 
                     <TextView
-                        android:id="@+id/openings2"
+                        android:id="@+id/openings_content_2"
                         style="@style/LocationItemTextView_details"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"

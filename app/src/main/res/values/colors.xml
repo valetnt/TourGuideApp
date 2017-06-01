@@ -4,8 +4,8 @@
     <color name="colorPrimary">#263238</color>
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorBackground">#CFD8DC</color>
     <color name="colorCardText">#FFFFFF</color>
+    <color name="colorCardBackground">#263238</color>
     <color name="colorTitle">#880E4F</color>
     <color name="colorDetails">#37474F</color>
     <color name="colorDetailsDarker">#263238</color>

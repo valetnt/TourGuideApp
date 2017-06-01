@@ -34,17 +34,17 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/activity_main_list_item1" />
 
-            <android.support.v7.widget.CardView
+            <FrameLayout
                 android:id="@+id/first_icon"
-                android:layout_width="@dimen/itinerary_item_card_height"
-                android:layout_height="@dimen/itinerary_item_card_height"
+                android:layout_width="@dimen/itinerary_item_frame_height"
+                android:layout_height="@dimen/itinerary_item_frame_height"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_marginEnd="@dimen/itinerary_item_padding"
                 android:layout_marginRight="@dimen/itinerary_item_padding"
                 android:layout_marginTop="@dimen/itinerary_item_padding"
-                app:cardCornerRadius="@dimen/itinerary_corner_radius"
-                app:contentPadding="@dimen/itinerary_item_card_padding">
+                android:background="@drawable/itinerary_frame_background"
+                android:padding="@dimen/itinerary_item_frame_padding">
 
                 <ImageView
                     android:id="@+id/icon1"
@@ -55,19 +55,19 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/ic_directions_walk" />
 
-            </android.support.v7.widget.CardView>
+            </FrameLayout>
 
-            <android.support.v7.widget.CardView
-                android:layout_width="@dimen/itinerary_item_card_height"
-                android:layout_height="@dimen/itinerary_item_card_height"
+            <FrameLayout
+                android:layout_width="@dimen/itinerary_item_frame_height"
+                android:layout_height="@dimen/itinerary_item_frame_height"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_below="@id/first_icon"
                 android:layout_marginEnd="@dimen/itinerary_item_padding"
                 android:layout_marginRight="@dimen/itinerary_item_padding"
-                android:layout_marginTop="@dimen/itinerary_item_card_padding"
-                app:cardCornerRadius="@dimen/itinerary_corner_radius"
-                app:contentPadding="@dimen/itinerary_item_card_padding">
+                android:layout_marginTop="@dimen/itinerary_item_frame_padding"
+                android:background="@drawable/itinerary_frame_background"
+                android:padding="@dimen/itinerary_item_frame_padding">
 
                 <ImageView
                     android:id="@+id/icon2"
@@ -78,7 +78,7 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/ic_directions_bike" />
 
-            </android.support.v7.widget.CardView>
+            </FrameLayout>
 
         </RelativeLayout>
 

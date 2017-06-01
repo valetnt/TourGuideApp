@@ -26,9 +26,9 @@ public class ItinerariesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_itineraries);
 
-        ActionBar toolbar = getSupportActionBar();
-        toolbar.setTitle(getString(R.string.activity_main_list_txt_item1));
-        toolbar.setDisplayHomeAsUpEnabled(true);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle(getString(R.string.activity_main_list_txt_item1));
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.container);
 

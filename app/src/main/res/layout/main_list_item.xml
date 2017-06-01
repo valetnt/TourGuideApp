@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:minHeight="@dimen/list_item_size"
-    app:cardBackgroundColor="@color/colorPrimary"
+    app:cardBackgroundColor="@color/colorCardBackground"
     app:cardCornerRadius="@dimen/corner_radius"
     app:cardPreventCornerOverlap="false">
 

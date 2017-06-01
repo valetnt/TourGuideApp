@@ -38,10 +38,9 @@
         <item name="android:fontFamily">sans-serif-light</item>
     </style>
 
-    <style name="LocationItemCard">
-        <item name="android:textColor">@color/colorDetailsDarker</item>
+    <style name="LocationItemFrame">
+        <item name="android:textColor">@color/colorCardText</item>
         <item name="android:textSize">@dimen/location_item_text_size_small</item>
-        <item name="android:paddingRight">@dimen/location_item_card_padding</item>
     </style>
 
     <!-- Itinerary Item -->
