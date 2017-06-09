@@ -9,8 +9,7 @@
     <string name="activity_main_list_txt_item1">Itineraries</string>
     <string name="activity_main_list_txt_item2">Tourist Attractions</string>
     <string name="activity_main_list_txt_item3">Museums</string>
-    <string name="activity_main_list_txt_item4">Food \u0026 Drinks</string>
-    <string name="activity_main_list_txt_item5">Useful Links</string>
+    <string name="activity_main_list_txt_item4">Useful Links</string>
 
     <!-- Attractions Activity -->
     <string name="activity_attractions_name">Tourist Attractions</string>

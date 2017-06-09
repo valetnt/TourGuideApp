@@ -16,6 +16,46 @@
         <item name="android:fontFamily">sans-serif-light</item>
     </style>
 
+    <!-- Itineraries Activity -->
+    <style name="ItinerariesTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabBackground">@color/colorTabsBackground</item>
+        <item name="tabGravity">center</item>
+        <item name="tabIndicatorColor">@color/colorAccent</item>
+        <item name="tabIndicatorHeight">@dimen/itineraries_activity_tabIndicatorHeight</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabPaddingEnd">@dimen/itineraries_activity_tabPadding</item>
+        <item name="tabPaddingStart">@dimen/itineraries_activity_tabPadding</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="tabTextAppearance">@style/ItinerariesTabTextAppearance</item>
+    </style>
+
+    <style name="ItinerariesTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">true</item>
+        <item name="android:textColor">@color/colorTabsText</item>
+    </style>
+
+    <!-- Itinerary Item -->
+    <style name="ItineraryItemTextView_title">
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="android:textSize">@dimen/location_item_text_size_big</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="ItineraryItemTextView_details_bold">
+        <item name="android:textColor">@color/colorDetailsDarker</item>
+        <item name="android:textSize">@dimen/location_item_text_size_small</item>
+        <item name="android:paddingTop">@dimen/location_item_padding</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ItineraryItemTextView_details">
+        <item name="android:textColor">@color/colorDetails</item>
+        <item name="android:paddingRight">@dimen/location_item_padding</item>
+        <item name="android:textSize">@dimen/location_item_text_size_medium</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
     <!-- Location Item -->
     <style name="LocationItemTextView_title">
         <item name="android:textColor">@color/colorTitle</item>
@@ -43,27 +83,6 @@
         <item name="android:textSize">@dimen/location_item_text_size_small</item>
     </style>
 
-    <!-- Itinerary Item -->
-    <style name="ItineraryItemTextView_title">
-        <item name="android:textColor">@color/colorTitle</item>
-        <item name="android:textSize">@dimen/location_item_text_size_big</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:fontFamily">sans-serif-light</item>
-    </style>
-
-    <style name="ItineraryItemTextView_details_bold">
-        <item name="android:textColor">@color/colorDetailsDarker</item>
-        <item name="android:textSize">@dimen/location_item_text_size_small</item>
-        <item name="android:paddingTop">@dimen/location_item_padding</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="ItineraryItemTextView_details">
-        <item name="android:textColor">@color/colorDetails</item>
-        <item name="android:paddingRight">@dimen/location_item_padding</item>
-        <item name="android:textSize">@dimen/location_item_text_size_medium</item>
-        <item name="android:fontFamily">sans-serif-light</item>
-    </style>
 
 
 </resources>

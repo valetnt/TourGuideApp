@@ -31,9 +31,6 @@ public class MainActivity extends AppCompatActivity {
         mainListItems.add(new MainListItem(R.drawable.activity_main_list_item4,
                 getString(R.string.activity_main_list_txt_item4)));
 
-        mainListItems.add(new MainListItem(R.drawable.activity_main_list_item5,
-                getString(R.string.activity_main_list_txt_item5)));
-
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(new MainListAdapter(this, mainListItems));
 
