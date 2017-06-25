@@ -10,17 +10,17 @@
         style="@style/LocationItemTextView_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/location_item_padding"
+        android:paddingTop="@dimen/location_item_vertical_spacing"
         android:text="@string/location_item_touristicAttraction" />
 
     <TextView
         android:id="@+id/address"
         style="@style/LocationItemTextView_details"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="@dimen/location_item_padding" />
+        android:layout_height="wrap_content" />
 
     <LinearLayout
+        android:baselineAligned="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="@dimen/location_item_size"
@@ -44,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_margin="@dimen/location_item_padding"
+                android:layout_margin="@dimen/location_item_vertical_spacing"
                 android:background="@drawable/location_frame_background"
                 android:orientation="horizontal"
                 android:padding="@dimen/location_item_frame_padding">
@@ -74,7 +74,7 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/location_item_padding"
+            android:layout_marginBottom="@dimen/location_item_vertical_spacing"
             android:layout_marginLeft="@dimen/location_item_horizontal_margin"
             android:layout_marginStart="@dimen/location_item_horizontal_margin"
             android:layout_weight="1"

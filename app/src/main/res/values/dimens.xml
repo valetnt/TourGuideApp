@@ -13,8 +13,9 @@
     <!-- Location Item -->
     <dimen name="location_item_size">100dp</dimen>
     <dimen name="location_item_padding">6dp</dimen>
+    <dimen name="location_item_vertical_spacing">4dp</dimen>
     <dimen name="location_item_text_size_big">15sp</dimen>
-    <dimen name="location_item_text_size_medium">12sp</dimen>
+    <dimen name="location_item_text_size_medium">13sp</dimen>
     <dimen name="location_item_text_size_small">11sp</dimen>
     <dimen name="location_item_horizontal_margin">16dp</dimen>
     <dimen name="location_item_frame_height">22dp</dimen>
@@ -28,8 +29,9 @@
     <!-- Eating Place Item -->
     <dimen name="eating_place_item_size">100dp</dimen>
     <dimen name="eating_place_item_padding">6dp</dimen>
+    <dimen name="eating_place_item_vertical_spacing">4dp</dimen>
     <dimen name="eating_place_item_text_size_big">15sp</dimen>
-    <dimen name="eating_place_item_text_size_medium">12sp</dimen>
+    <dimen name="eating_place_item_text_size_medium">13sp</dimen>
     <dimen name="eating_place_item_text_size_small">11sp</dimen>
     <dimen name="eating_place_item_horizontal_margin">16dp</dimen>
     <dimen name="eating_place_item_frame_height">20dp</dimen>

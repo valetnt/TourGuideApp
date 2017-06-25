@@ -10,15 +10,14 @@
         style="@style/EatingPlaceItemTextView_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/eating_place_item_padding"
+        android:paddingTop="@dimen/eating_place_item_vertical_spacing"
         android:text="@string/eating_place_item_name" />
 
     <TextView
         android:id="@+id/address"
         style="@style/EatingPlaceItemTextView_details"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="@dimen/eating_place_item_padding" />
+        android:layout_height="wrap_content" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -45,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_margin="@dimen/location_item_padding"
+                android:layout_margin="@dimen/location_item_vertical_spacing"
                 android:background="@drawable/location_frame_background"
                 android:orientation="horizontal"
                 android:padding="@dimen/location_item_frame_padding">
@@ -75,7 +74,7 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/eating_place_item_padding"
+            android:layout_marginBottom="@dimen/eating_place_item_vertical_spacing"
             android:layout_marginEnd="@dimen/eating_place_item_horizontal_margin"
             android:layout_marginLeft="@dimen/eating_place_item_horizontal_margin"
             android:layout_marginRight="@dimen/eating_place_item_horizontal_margin"
