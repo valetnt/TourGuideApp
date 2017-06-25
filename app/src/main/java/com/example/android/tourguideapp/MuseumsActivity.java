@@ -18,26 +18,29 @@ public class MuseumsActivity extends AppCompatActivity {
         setContentView(R.layout.locations);
 
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle(getString(R.string.activity_museums_name));
+        actionBar.setTitle(getString(R.string.activity_main_list_txt_item3));
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        ArrayList<LocationListItem> museums = new ArrayList<>();
-        museums.add(new LocationListItem("Museo degli Eremitani", "Apr. - Sept.",
-                "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30", "Closed on 25th Dec., 1st Jan.",
-                "Tel. 049 691760", "www.padovanet.info.com", R.drawable.activity_main_list_item3));
+        ArrayList<LocationListItem> locations = new ArrayList<>();
+        locations.add(new LocationListItem("Museo degli Eremitani", "P.zza degli Eremitani, Padova",
+                "Apr. - Sept.", "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30",
+                "Closed on 25th Dec., 1st Jan.", "Tel. 049 691760", "www.padovanet.info.com",
+                R.drawable.activity_main_list_item3));
 
-        museums.add(new LocationListItem("Museo degli Eremitani", "Apr. - Sept.",
-                "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30", "Closed on 25th Dec., 1st Jan.",
-                "Tel. 049 691760", "www.padovanet.info.com", R.drawable.activity_main_list_item3));
+        locations.add(new LocationListItem("Museo degli Eremitani", "P.zza degli Eremitani, Padova",
+                "Apr. - Sept.", "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30",
+                "Closed on 25th Dec., 1st Jan.", "Tel. 049 691760", "www.padovanet.info.com",
+                R.drawable.activity_main_list_item3));
 
-        museums.add(new LocationListItem("Museo degli Eremitani", "Apr. - Sept.",
-                "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30", "Closed on 25th Dec., 1st Jan.",
-                "Tel. 049 691760", "www.padovanet.info.com", R.drawable.activity_main_list_item3));
+        locations.add(new LocationListItem("Museo degli Eremitani", "P.zza degli Eremitani, Padova",
+                "Apr. - Sept.", "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30",
+                "Closed on 25th Dec., 1st Jan.", "Tel. 049 691760", "www.padovanet.info.com",
+                R.drawable.activity_main_list_item3));
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.list);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,
                 false));
-        recyclerView.setAdapter(new LocationListAdapter(museums));
+        recyclerView.setAdapter(new LocationListAdapter(locations));
         recyclerView.setHasFixedSize(true);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.addItemDecoration(new DividerItemDecoration(this,

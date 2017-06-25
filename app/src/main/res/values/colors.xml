@@ -7,9 +7,11 @@
     <color name="colorCardText">#FFFFFF</color>
     <color name="colorCardBackground">#263238</color>
     <color name="colorTitle">#880E4F</color>
-    <color name="colorDetails">#37474F</color>
-    <color name="colorDetailsDarker">#263238</color>
+    <color name="colorText">#37474F</color>
+    <color name="colorTextDarker">#263238</color>
     <color name="colorTabsBackground">#263238</color>
     <color name="colorTabsText">#78909C</color>
+
+
 
 </resources>

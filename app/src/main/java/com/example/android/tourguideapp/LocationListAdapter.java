@@ -20,6 +20,7 @@ public class LocationListAdapter extends RecyclerView.Adapter<LocationListAdapte
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         private TextView mName;
+        private TextView mAddress;
         private TextView mOpenings_header_1;
         private TextView mOpenings_content_1;
         private TextView mOpenings_header_2;
@@ -32,6 +33,7 @@ public class LocationListAdapter extends RecyclerView.Adapter<LocationListAdapte
         public ViewHolder(View layoutView) {
             super(layoutView);
             mName = (TextView) layoutView.findViewById(R.id.name);
+            mAddress = (TextView) layoutView.findViewById(R.id.address);
             mOpenings_header_1 = (TextView) layoutView.findViewById(R.id.openings_header_1);
             mOpenings_content_1 = (TextView) layoutView.findViewById(R.id.openings_content_1);
             mOpenings_header_2 = (TextView) layoutView.findViewById(R.id.openings_header_2);
@@ -56,6 +58,7 @@ public class LocationListAdapter extends RecyclerView.Adapter<LocationListAdapte
     public void onBindViewHolder(ViewHolder holder, int position) {
 
         holder.mName.setText(mLocations.get(position).getName());
+        holder.mAddress.setText(mLocations.get(position).getAddress());
         holder.mOpenings_header_1.setText(mLocations.get(position).getOpeningsHeader1());
         holder.mOpenings_content_1.setText(mLocations.get(position).getOpeningsContent1());
         holder.mOpenings_header_2.setText(mLocations.get(position).getOpeningsHeader2());

@@ -1,10 +1,9 @@
 package com.example.android.tourguideapp;
 
-import android.support.annotation.Nullable;
-
 public class LocationListItem {
 
     private String mName;
+    private String mAddress;
     private String mOpeningsHeader1;
     private String mOpeningsContent1;
     private String mOpeningsHeader2;
@@ -14,12 +13,13 @@ public class LocationListItem {
     private String mContact2;
     private int mImageID;
 
-    public LocationListItem(String name, String openings_header_1, String openings_content_1,
-                            String openings_header_2, String openings_content_2,
-                            @Nullable String furtherDetails, @Nullable String contact_1,
-                            @Nullable String contact_2, int image) {
+    public LocationListItem(String name, String address, String openings_header_1,
+                            String openings_content_1, String openings_header_2,
+                            String openings_content_2, String furtherDetails, String contact_1,
+                            String contact_2, int image) {
 
         mName = name;
+        mAddress = address;
         mOpeningsHeader1 = openings_header_1;
         mOpeningsContent1 = openings_content_1;
         mOpeningsHeader2 = openings_header_2;
@@ -32,6 +32,10 @@ public class LocationListItem {
 
     public String getName() {
         return mName;
+    }
+
+    public String getAddress() {
+        return mAddress;
     }
 
     public String getOpeningsHeader1() {

@@ -4,35 +4,35 @@
     <!-- GENERAL -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="corner_radius">2dp</dimen>
+    <dimen name="corner_radius">4dp</dimen>
 
     <!-- Main Activity (Home) -->
     <dimen name="list_item_size">80dp</dimen>
     <dimen name="list_item_text_size">20sp</dimen>
 
     <!-- Location Item -->
-    <dimen name="location_item_size">120dp</dimen>
+    <dimen name="location_item_size">100dp</dimen>
     <dimen name="location_item_padding">6dp</dimen>
-    <dimen name="location_item_text_size_big">16sp</dimen>
-    <dimen name="location_item_text_size_medium">13sp</dimen>
-    <dimen name="location_item_text_size_small">12sp</dimen>
+    <dimen name="location_item_text_size_big">15sp</dimen>
+    <dimen name="location_item_text_size_medium">12sp</dimen>
+    <dimen name="location_item_text_size_small">11sp</dimen>
     <dimen name="location_item_horizontal_margin">16dp</dimen>
     <dimen name="location_item_frame_height">22dp</dimen>
-    <dimen name="location_item_frame_padding">2dp</dimen>
+    <dimen name="location_item_frame_padding">4dp</dimen>
 
-    <!-- Itineraries Activity -->
-    <dimen name="itineraries_activity_vertical_margin">6dp</dimen>
-    <dimen name="itineraries_activity_tabIndicatorHeight">2dp</dimen>
-    <dimen name="itineraries_activity_tabPadding">8dp</dimen>
+    <!-- Eating Activity -->
+    <dimen name="eating_activity_vertical_margin">6dp</dimen>
+    <dimen name="eating_activity_tabIndicatorHeight">2dp</dimen>
+    <dimen name="eating_activity_tabPadding">8dp</dimen>
 
-    <!-- Itinerary Item -->
-    <dimen name="itinerary_item_size">120dp</dimen>
-    <dimen name="itinerary_item_padding">6dp</dimen>
-    <dimen name="itinerary_item_text_size_big">16sp</dimen>
-    <dimen name="itinerary_item_text_size_medium">13sp</dimen>
-    <dimen name="itinerary_item_text_size_small">12sp</dimen>
-    <dimen name="itinerary_item_horizontal_margin">16dp</dimen>
-    <dimen name="itinerary_item_frame_height">20dp</dimen>
-    <dimen name="itinerary_item_frame_padding">2dp</dimen>
+    <!-- Eating Place Item -->
+    <dimen name="eating_place_item_size">100dp</dimen>
+    <dimen name="eating_place_item_padding">6dp</dimen>
+    <dimen name="eating_place_item_text_size_big">15sp</dimen>
+    <dimen name="eating_place_item_text_size_medium">12sp</dimen>
+    <dimen name="eating_place_item_text_size_small">11sp</dimen>
+    <dimen name="eating_place_item_horizontal_margin">16dp</dimen>
+    <dimen name="eating_place_item_frame_height">20dp</dimen>
+    <dimen name="eating_place_item_frame_padding">2dp</dimen>
 
 </resources>

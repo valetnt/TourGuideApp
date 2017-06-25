@@ -19,7 +19,7 @@
             android:layout_height="@dimen/list_item_size"
             android:contentDescription="@string/list_item_img_content_descr"
             android:scaleType="centerCrop"
-            android:src="@drawable/activity_main_list_item1" />
+            android:src="@drawable/palazzo_ragione" />
 
         <TextView
             android:id="@+id/categories_txt"

@@ -1,43 +1,46 @@
 <resources>
 
     <string name="app_name">Tour Guide App</string>
+    <string name="activity_city_name">City Center</string>
+    <string name="activity_villas_name">Villas and Castles</string>
+    <string name="activity_museums_name">Art and Museums</string>
+    <string name="activity_eating_name">Where to Eat</string>
 
     <!-- Main Activity (Home) -->
     <string name="cover_img_content_descr">Cover Image</string>
     <string name="list_item_img_content_descr">Category Image Thumbnail</string>
     <string name="activity_main_list_txt_item">Category</string>
-    <string name="activity_main_list_txt_item1">Itineraries</string>
-    <string name="activity_main_list_txt_item2">Tourist Attractions</string>
-    <string name="activity_main_list_txt_item3">Museums</string>
-    <string name="activity_main_list_txt_item4">Useful Links</string>
-
-    <!-- Attractions Activity -->
-    <string name="activity_attractions_name">Tourist Attractions</string>
-
-    <!-- Museums Activity -->
-    <string name="activity_museums_name">Museums</string>
+    <string name="activity_main_list_txt_item1">City Center</string>
+    <string name="activity_main_list_txt_item2">Villas and Castles</string>
+    <string name="activity_main_list_txt_item3">Art and Museums</string>
+    <string name="activity_main_list_txt_item4">Where to Eat</string>
 
     <!-- Location Item -->
-    <string name="location_img_content_descr">Location Image Thumbnail</string>
+    <string name="location_img_content_descr">Thumbnail</string>
     <string name="location_item_icon_descr">Maps Icon</string>
-    <string name="seeInMaps">See in Maps</string>
+    <string name="location_item_seeInMaps">Maps</string>
+    <string name="location_item_touristicAttraction">Name of the touristic attraction</string>
+    <string name="location_item_openingHours">Openings:</string>
+    <string name="location_item_contactInfo">Contact:</string>
 
-    <!-- Itineraries Activity -->
-    <string name="activity_itineraries_name">Itineraries</string>
+    <!-- Eating Activity -->
+    <string name="eating_place_section_title">Section Title</string>
+    <string name="eating_place_section_description">Section Description</string>
+    <string name="eating_place_section_title1">Typical Cuisine</string>
+    <string name="eating_place_section_description1">Section Description</string>
+    <string name="eating_place_section_title2">Bars, Taverns &#38; Take-away</string>
+    <string name="eating_place_section_description2">Section Description</string>
+    <string name="eating_place_section_title3">Other Restaurants</string>
+    <string name="eating_place_section_description3">Section Description</string>
+    <string name="eating_place_section_short_title1">Local</string>
+    <string name="eating_place_section_short_title2">Fast</string>
+    <string name="eating_place_section_short_title3">Other</string>
 
-    <!-- Itinerary Item -->
-    <string name="itinerary_img_content_descr">Itinerary Image Thumbnail</string>
-    <string name="itinerary_item_icon_descr">Maps Icon</string>
-    <string name="itinerary_section_title">Section Title</string>
-    <string name="itinerary_section_description">Section Description</string>
-    <string name="itinerary_section_title1">Euganean Hills</string>
-    <string name="itinerary_section_description1">Section Description</string>
-    <string name="itinerary_section_title2">Villas along the Brenta River</string>
-    <string name="itinerary_section_description2">Section Description</string>
-    <string name="itinerary_section_title3">Strolling in the city center</string>
-    <string name="itinerary_section_description3">Section Description</string>
-    <string name="itinerary_section_short_title1">Sports</string>
-    <string name="itinerary_section_short_title2">Villas</string>
-    <string name="itinerary_section_short_title3">City Center</string>
+    <!-- Eating Place Item -->
+    <string name="eating_place_item_name">Name of the restaurant, bar, etc.</string>
+    <string name="eating_place_item_cuisine">Cuisine:</string>
+    <string name="eating_place_item_contactInfo">Contact:</string>
+    <string name="eating_place_item_img_content_descr">Thumbnail</string>
+    <string name="eating_place_item_icon_descr">Maps Icon</string>
 
 </resources>
