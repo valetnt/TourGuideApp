@@ -14,6 +14,19 @@
     <string name="activity_main_list_txt_item2">Villas and Castles</string>
     <string name="activity_main_list_txt_item3">Art and Museums</string>
     <string name="activity_main_list_txt_item4">Where to Eat</string>
+    <string name="activity_main_header">Discover the city of Padua</string>
+    <string name="activity_main_description">
+        The city of Padua (in Italian: Padova) is considered by many to be one of the most
+        beautiful cities in Northern Italy.
+        Less than 40 km away from Venice,
+        Padua has in fact little to envy to her much more famous sister-city and can boast an
+        equally rich history and an equally fascinating patrimony of art and architecture.
+        Moreover, the city hosts one of the most ancient Universities in the world.
+        Here you will find a list of the major attractions that are really worth a visit if you
+        happen to come into town, and &#8212; no less important! &#8212; some suggestions on
+        where to find great food and wine to refresh your body and soul during your visit.
+
+    </string>
 
     <!-- Location Item -->
     <string name="location_img_content_descr">Thumbnail</string>

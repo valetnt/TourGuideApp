@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -9,35 +9,47 @@
     </style>
 
     <!-- Main Activity -->
-    <style name="ListItemTextView">
+    <style name="ListItemTextView" parent="AppTheme">
         <item name="android:textColor">@color/colorCardText</item>
         <item name="android:textSize">@dimen/list_item_text_size</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="MainTitle" parent="AppTheme">
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="android:textSize">@dimen/font_size_big</item>
         <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Description" parent="AppTheme">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:textStyle">normal</item>
     </style>
 
     <!-- Location Item -->
-    <style name="LocationItemTextView_title">
+    <style name="LocationItemTextView_title" parent="AppTheme">
         <item name="android:textColor">@color/colorTitle</item>
-        <item name="android:textSize">@dimen/location_item_text_size_big</item>
+        <item name="android:textSize">@dimen/font_size_big</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="LocationItemTextView_details_bold">
+    <style name="LocationItemTextView_details_bold" parent="AppTheme">
         <item name="android:textColor">@color/colorTextDarker</item>
-        <item name="android:textSize">@dimen/location_item_text_size_small</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
         <item name="android:paddingTop">@dimen/location_item_padding</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="LocationItemTextView_details">
+    <style name="LocationItemTextView_details" parent="AppTheme">
         <item name="android:textColor">@color/colorText</item>
         <item name="android:paddingRight">@dimen/location_item_padding</item>
-        <item name="android:textSize">@dimen/location_item_text_size_small</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
     </style>
 
-    <style name="LocationItemFrame">
+    <style name="LocationItemFrame" parent="AppTheme">
         <item name="android:textColor">@color/colorCardText</item>
-        <item name="android:textSize">@dimen/location_item_text_size_small</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
     </style>
 
     <!-- Eating Activity -->
@@ -59,23 +71,23 @@
     </style>
 
     <!-- Eating Place Item -->
-    <style name="EatingPlaceItemTextView_title">
+    <style name="EatingPlaceItemTextView_title" parent="AppTheme">
         <item name="android:textColor">@color/colorTitle</item>
-        <item name="android:textSize">@dimen/eating_place_item_text_size_big</item>
+        <item name="android:textSize">@dimen/font_size_big</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="EatingPlaceItemTextView_details_bold">
+    <style name="EatingPlaceItemTextView_details_bold" parent="AppTheme">
         <item name="android:textColor">@color/colorTextDarker</item>
-        <item name="android:textSize">@dimen/eating_place_item_text_size_small</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
         <item name="android:paddingTop">@dimen/eating_place_item_padding</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="EatingPlaceItemTextView_details">
+    <style name="EatingPlaceItemTextView_details" parent="AppTheme">
         <item name="android:textColor">@color/colorText</item>
         <item name="android:paddingRight">@dimen/eating_place_item_padding</item>
-        <item name="android:textSize">@dimen/eating_place_item_text_size_small</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
     </style>
 
 </resources>
