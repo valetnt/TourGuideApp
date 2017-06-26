@@ -27,7 +27,7 @@ public class EatingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_eating);
 
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle(getString(R.string.activity_main_list_txt_item1));
+        actionBar.setTitle(getString(R.string.activity_main_list_txt_item4));
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.container);

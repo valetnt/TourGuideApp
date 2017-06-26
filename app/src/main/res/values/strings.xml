@@ -8,6 +8,7 @@
 
     <!-- Main Activity (Home) -->
     <string name="cover_img_content_descr">Cover Image</string>
+    <string name="flag_icon_content_descr">Italian Flag</string>
     <string name="list_item_img_content_descr">Category Image Thumbnail</string>
     <string name="activity_main_list_txt_item">Category</string>
     <string name="activity_main_list_txt_item1">City Center</string>
@@ -25,7 +26,6 @@
         Here you will find a list of the major attractions that are really worth a visit if you
         happen to come into town, and &#8212; no less important! &#8212; some suggestions on
         where to find great food and wine to refresh your body and soul during your visit.
-
     </string>
 
     <!-- Location Item -->

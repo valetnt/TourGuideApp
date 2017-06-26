@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/Valeria/.android/build-cache/86d1729f25dff49b7b559c6c464d983415ef461b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="518f39cfab4e69273a0e296dbea34d5e9e07bf65">
+        <dex dex="/Users/Valeria/AndroidStudioProjects/TourGuideApp/app/build/intermediates/pre-dexed/debug/classes_af525532a2e1ab09c975d1f48bb89f0e55d18e86.jar" />
+    </item>
+
+</items>

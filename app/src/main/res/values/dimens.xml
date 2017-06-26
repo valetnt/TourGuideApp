@@ -8,11 +8,15 @@
     <dimen name="font_size_big">15sp</dimen>
     <dimen name="font_size_medium">13sp</dimen>
     <dimen name="font_size_small">11sp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="vertical_spacing">8dp</dimen>
+    <dimen name="horizontal_spacing">8dp</dimen>
 
     <!-- Main Activity (Home) -->
     <dimen name="list_item_size">80dp</dimen>
     <dimen name="list_item_text_size">20sp</dimen>
-    <dimen name="vertical_spacing">8dp</dimen>
+    <dimen name="landscape_cover_img_width">180dp</dimen>
+    <dimen name="landscape_cover_img_height">60dp</dimen>
 
     <!-- Location Item -->
     <dimen name="location_item_size">100dp</dimen>
@@ -23,9 +27,8 @@
     <dimen name="location_item_frame_padding">4dp</dimen>
 
     <!-- Eating Activity -->
-    <dimen name="eating_activity_vertical_margin">6dp</dimen>
     <dimen name="eating_activity_tabIndicatorHeight">2dp</dimen>
-    <dimen name="eating_activity_tabPadding">8dp</dimen>
+    <dimen name="eating_activity_tabPadding">0dp</dimen>
 
     <!-- Eating Place Item -->
     <dimen name="eating_place_item_size">100dp</dimen>

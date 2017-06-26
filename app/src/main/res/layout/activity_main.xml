@@ -10,45 +10,73 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:src="@drawable/cover_image"
+        android:layout_weight="5"
+        android:contentDescription="@string/cover_img_content_descr"
         android:scaleType="centerCrop"
-        android:contentDescription="@string/cover_img_content_descr" />
+        android:src="@drawable/cover_image" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/vertical_spacing"
+        android:layout_weight="7"
         android:orientation="vertical">
 
-        <TextView
-            style="@style/MainTitle"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/vertical_spacing"
-            android:text="@string/activity_main_header"/>
+            android:orientation="horizontal">
 
-        <TextView
-            style="@style/Description"
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_gravity="center"
+                android:contentDescription="@string/flag_icon_content_descr"
+                android:src="@drawable/italian_flag" />
+
+            <TextView
+                style="@style/MainTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/horizontal_spacing"
+                android:layout_marginStart="@dimen/horizontal_spacing"
+                android:text="@string/activity_main_header" />
+
+        </LinearLayout>
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/vertical_spacing"
-            android:text="@string/activity_main_description"/>
+            android:layout_height="wrap_content">
 
-        <ListView
-            android:id="@+id/list"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawSelectorOnTop="true">
+            <com.codesgood.views.JustifiedTextView
+                style="@style/Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_main_description" />
 
-        </ListView>
+        </ScrollView>
 
     </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_weight="9"
+        android:drawSelectorOnTop="true">
+
+    </ListView>
 
 </LinearLayout>

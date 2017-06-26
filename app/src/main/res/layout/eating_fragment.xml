@@ -9,12 +9,12 @@
         style="@style/EatingPlaceItemTextView_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/eating_activity_vertical_margin"
+        android:layout_marginBottom="@dimen/eating_place_item_vertical_spacing"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginRight="@dimen/activity_horizontal_margin"
         android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/eating_place_item_vertical_spacing"
         android:text="@string/eating_place_section_title" />
 
     <TextView
@@ -22,7 +22,6 @@
         style="@style/EatingPlaceItemTextView_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/eating_activity_vertical_margin"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginRight="@dimen/activity_horizontal_margin"
