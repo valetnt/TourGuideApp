@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/SightseeingPlaceItemTextView_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/sightseeing_place_item_vertical_spacing"
+        android:text="@string/sightseeing_place_item_name" />
+
+    <TextView
+        android:id="@+id/address"
+        style="@style/SightseeingPlaceItemTextView_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:minHeight="@dimen/sightseeing_place_item_size"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/sightseeing_place_item_size"
+            android:layout_height="@dimen/sightseeing_place_item_size"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/sightseeing_place_item_img_content_descr"
+                android:scaleType="centerCrop"
+                android:src="@drawable/activity_main_list_item4" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/location_item_vertical_spacing"
+                android:background="@drawable/location_frame_background"
+                android:orientation="horizontal"
+                android:padding="@dimen/location_item_frame_padding">
+
+                <ImageView
+                    android:id="@+id/mapsIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/location_item_frame_height"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/location_item_icon_descr"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_place" />
+
+                <TextView
+                    style="@style/LocationItemFrame"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/location_item_seeInMaps" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sightseeing_place_item_vertical_spacing"
+            android:layout_marginEnd="@dimen/sightseeing_place_item_horizontal_margin"
+            android:layout_marginLeft="@dimen/sightseeing_place_item_horizontal_margin"
+            android:layout_marginRight="@dimen/sightseeing_place_item_horizontal_margin"
+            android:layout_marginStart="@dimen/sightseeing_place_item_horizontal_margin"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SightseeingPlaceItemTextView_details_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sightseeing_place_item_details" />
+
+                <TextView
+                    android:id="@+id/details"
+                    style="@style/SightseeingPlaceItemTextView_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/further_details"
+                    style="@style/SightseeingPlaceItemTextView_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/vertical_spacing" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

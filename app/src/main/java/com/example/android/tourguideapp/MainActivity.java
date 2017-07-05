@@ -1,7 +1,6 @@
 package com.example.android.tourguideapp;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -59,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 } else if(((MainListItem)parent.getAdapter().getItem(position)).getText().equals(
                         getString(R.string.activity_main_list_txt_item4))) {
 
-                    Intent intent = new Intent(MainActivity.this, EatingActivity.class);
+                    Intent intent = new Intent(MainActivity.this, SightseeingActivity.class);
                     startActivity(intent);
                 }
             }

@@ -26,16 +26,16 @@
     <dimen name="location_item_frame_height">22dp</dimen>
     <dimen name="location_item_frame_padding">4dp</dimen>
 
-    <!-- Eating Activity -->
-    <dimen name="eating_activity_tabIndicatorHeight">2dp</dimen>
-    <dimen name="eating_activity_tabPadding">0dp</dimen>
+    <!-- Sightseeing Activity -->
+    <dimen name="sightseeing_activity_tabIndicatorHeight">2dp</dimen>
+    <dimen name="sightseeing_activity_tabPadding">0dp</dimen>
 
-    <!-- Eating Place Item -->
-    <dimen name="eating_place_item_size">100dp</dimen>
-    <dimen name="eating_place_item_padding">6dp</dimen>
-    <dimen name="eating_place_item_vertical_spacing">4dp</dimen>
-    <dimen name="eating_place_item_horizontal_margin">16dp</dimen>
-    <dimen name="eating_place_item_frame_height">20dp</dimen>
-    <dimen name="eating_place_item_frame_padding">2dp</dimen>
+    <!-- Sightseeing Place Item -->
+    <dimen name="sightseeing_place_item_size">100dp</dimen>
+    <dimen name="sightseeing_place_item_padding">6dp</dimen>
+    <dimen name="sightseeing_place_item_vertical_spacing">4dp</dimen>
+    <dimen name="sightseeing_place_item_horizontal_margin">16dp</dimen>
+    <dimen name="sightseeing_place_item_frame_height">20dp</dimen>
+    <dimen name="sightseeing_place_item_frame_padding">2dp</dimen>
 
 </resources>

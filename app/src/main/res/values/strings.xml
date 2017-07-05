@@ -1,31 +1,30 @@
 <resources>
 
     <string name="app_name">Tour Guide App</string>
-    <string name="activity_city_name">City Center</string>
+    <string name="activity_city_name">Civic and Religious Buildings</string>
     <string name="activity_villas_name">Villas and Castles</string>
-    <string name="activity_museums_name">Art and Museums</string>
-    <string name="activity_eating_name">Where to Eat</string>
+    <string name="activity_museums_name">Museums and Gardens</string>
+    <string name="activity_sightseeing_name">Sights you will never forget</string>
 
     <!-- Main Activity (Home) -->
     <string name="cover_img_content_descr">Cover Image</string>
     <string name="flag_icon_content_descr">Italian Flag</string>
     <string name="list_item_img_content_descr">Category Image Thumbnail</string>
     <string name="activity_main_list_txt_item">Category</string>
-    <string name="activity_main_list_txt_item1">City Center</string>
+    <string name="activity_main_list_txt_item1">Civic and Religious Buildings</string>
     <string name="activity_main_list_txt_item2">Villas and Castles</string>
-    <string name="activity_main_list_txt_item3">Art and Museums</string>
-    <string name="activity_main_list_txt_item4">Where to Eat</string>
+    <string name="activity_main_list_txt_item3">Museums and Gardens</string>
+    <string name="activity_main_list_txt_item4">Sights you will never forget</string>
     <string name="activity_main_header">Discover the city of Padua</string>
     <string name="activity_main_description">
         The city of Padua (in Italian: Padova) is considered by many to be one of the most
         beautiful cities in Northern Italy.
         Less than 40 km away from Venice,
-        Padua has in fact little to envy to her much more famous sister-city and can boast an
+        Padua has in fact little to envy to her much more famous neighbour and can boast an
         equally rich history and an equally fascinating patrimony of art and architecture.
         Moreover, the city hosts one of the most ancient Universities in the world.
         Here you will find a list of the major attractions that are really worth a visit if you
-        happen to come into town, and &#8212; no less important! &#8212; some suggestions on
-        where to find great food and wine to refresh your body and soul during your visit.
+        happen to come into town.
     </string>
 
     <!-- Location Item -->
@@ -36,24 +35,17 @@
     <string name="location_item_openingHours">Openings:</string>
     <string name="location_item_contactInfo">Contact:</string>
 
-    <!-- Eating Activity -->
-    <string name="eating_place_section_title">Section Title</string>
-    <string name="eating_place_section_description">Section Description</string>
-    <string name="eating_place_section_title1">Typical Cuisine</string>
-    <string name="eating_place_section_description1">Section Description</string>
-    <string name="eating_place_section_title2">Bars, Taverns &#38; Take-away</string>
-    <string name="eating_place_section_description2">Section Description</string>
-    <string name="eating_place_section_title3">Other Restaurants</string>
-    <string name="eating_place_section_description3">Section Description</string>
-    <string name="eating_place_section_short_title1">Local</string>
-    <string name="eating_place_section_short_title2">Fast</string>
-    <string name="eating_place_section_short_title3">Other</string>
+    <!-- Sightseeing Activity -->
+    <string name="sightseeing_place_section_title">Section Title</string>
+    <string name="sightseeing_place_section_description">Section Description</string>
+    <string name="sightseeing_place_section_short_title1">City Center</string>
+    <string name="sightseeing_place_section_short_title2">Countryside</string>
 
-    <!-- Eating Place Item -->
-    <string name="eating_place_item_name">Name of the restaurant, bar, etc.</string>
-    <string name="eating_place_item_cuisine">Cuisine:</string>
-    <string name="eating_place_item_contactInfo">Contact:</string>
-    <string name="eating_place_item_img_content_descr">Thumbnail</string>
-    <string name="eating_place_item_icon_descr">Maps Icon</string>
+    <!-- Sightseeing Place Item -->
+    <string name="sightseeing_place_item_name">Name of the place</string>
+    <string name="sightseeing_place_item_details">What to see:</string>
+    <string name="sightseeing_place_item_nearby">Nearby:</string>
+    <string name="sightseeing_place_item_img_content_descr">Thumbnail</string>
+    <string name="sightseeing_place_item_icon_descr">Maps Icon</string>
 
 </resources>

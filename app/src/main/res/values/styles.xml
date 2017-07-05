@@ -52,15 +52,15 @@
         <item name="android:textSize">@dimen/font_size_small</item>
     </style>
 
-    <!-- Eating Activity -->
-    <style name="EatingActivityTabLayout" parent="Widget.Design.TabLayout">
+    <!-- Sightseeing Activity -->
+    <style name="SightseeingActivityTabLayout" parent="Widget.Design.TabLayout">
         <item name="tabBackground">@color/colorTabsBackground</item>
         <item name="tabMode">fixed</item>
         <item name="tabGravity">fill</item>
         <item name="tabIndicatorColor">@color/colorAccent</item>
-        <item name="tabIndicatorHeight">@dimen/eating_activity_tabIndicatorHeight</item>
-        <item name="tabPaddingEnd">@dimen/eating_activity_tabPadding</item>
-        <item name="tabPaddingStart">@dimen/eating_activity_tabPadding</item>
+        <item name="tabIndicatorHeight">@dimen/sightseeing_activity_tabIndicatorHeight</item>
+        <item name="tabPaddingEnd">@dimen/sightseeing_activity_tabPadding</item>
+        <item name="tabPaddingStart">@dimen/sightseeing_activity_tabPadding</item>
         <item name="tabSelectedTextColor">@android:color/white</item>
         <item name="tabTextAppearance">@style/EatingActivityTabTextAppearance</item>
     </style>
@@ -71,23 +71,23 @@
         <item name="android:textSize">@dimen/font_size_small</item>
     </style>
 
-    <!-- Eating Place Item -->
-    <style name="EatingPlaceItemTextView_title" parent="AppTheme">
+    <!-- Sightseeing Place Item -->
+    <style name="SightseeingPlaceItemTextView_title" parent="AppTheme">
         <item name="android:textColor">@color/colorTitle</item>
         <item name="android:textSize">@dimen/font_size_big</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="EatingPlaceItemTextView_details_bold" parent="AppTheme">
+    <style name="SightseeingPlaceItemTextView_details_bold" parent="AppTheme">
         <item name="android:textColor">@color/colorTextDarker</item>
         <item name="android:textSize">@dimen/font_size_small</item>
-        <item name="android:paddingTop">@dimen/eating_place_item_padding</item>
+        <item name="android:paddingTop">@dimen/sightseeing_place_item_padding</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="EatingPlaceItemTextView_details" parent="AppTheme">
+    <style name="SightseeingPlaceItemTextView_details" parent="AppTheme">
         <item name="android:textColor">@color/colorText</item>
-        <item name="android:paddingRight">@dimen/eating_place_item_padding</item>
+        <item name="android:paddingRight">@dimen/sightseeing_place_item_padding</item>
         <item name="android:textSize">@dimen/font_size_small</item>
     </style>
 

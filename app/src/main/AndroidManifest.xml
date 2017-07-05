@@ -43,8 +43,8 @@
                 android:value="com.example.android.tourguideapp.MainActivity" />
         </activity>
         <activity
-            android:name=".EatingActivity"
-            android:label="@string/activity_eating_name"
+            android:name=".SightseeingActivity"
+            android:label="@string/activity_sightseeing_name"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
