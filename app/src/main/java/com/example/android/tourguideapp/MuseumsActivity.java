@@ -25,17 +25,17 @@ public class MuseumsActivity extends AppCompatActivity {
         locations.add(new LocationListItem("Museo degli Eremitani", "P.zza degli Eremitani, Padova",
                 "Apr. - Sept.", "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30",
                 "Closed on 25th Dec., 1st Jan.", "Tel. 049 691760", "www.padovanet.info.com",
-                R.drawable.activity_main_list_item3));
+                R.drawable.museo_eremitani));
 
-        locations.add(new LocationListItem("Museo degli Eremitani", "P.zza degli Eremitani, Padova",
+        locations.add(new LocationListItem("Cappella degli Scrovegni", "P.zza degli Eremitani, Padova",
                 "Apr. - Sept.", "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30",
                 "Closed on 25th Dec., 1st Jan.", "Tel. 049 691760", "www.padovanet.info.com",
                 R.drawable.activity_main_list_item3));
 
-        locations.add(new LocationListItem("Museo degli Eremitani", "P.zza degli Eremitani, Padova",
+        locations.add(new LocationListItem("Casa-museo del Petrarca", "Arqua' Petrarca (PD)",
                 "Apr. - Sept.", "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30",
                 "Closed on 25th Dec., 1st Jan.", "Tel. 049 691760", "www.padovanet.info.com",
-                R.drawable.activity_main_list_item3));
+                R.drawable.casa_museo_petrarca));
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.list);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,

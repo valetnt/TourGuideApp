@@ -22,20 +22,32 @@ public class VillasActivity extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         ArrayList<LocationListItem> locations = new ArrayList<>();
-        locations.add(new LocationListItem("Castello di Monselice",
-                "via del Castello, Monselice (PD)", "Apr. - Sept.",
+        locations.add(new LocationListItem("Villa Contarini",
+                "Piazzola sul Brenta (PD)", "Apr. - Sept.",
                 "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30", "Closed on 25th Dec., 1st Jan.",
-                "Tel. 049 691760", "www.padovanet.info.com", R.drawable.castello_monselice));
+                "Tel. 049 691760", "www.padovanet.info.com", R.drawable.villa_contarini));
+
+        locations.add(new LocationListItem("Villa Pisani",
+                "Riviera del Brenta, Stra (PD)", "Apr. - Sept.",
+                "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30", "Closed on 25th Dec., 1st Jan.",
+                "Tel. 049 691760", "www.padovanet.info.com", R.drawable.villa_pisani));
 
         locations.add(new LocationListItem("Castello di Monselice",
                 "via del Castello, Monselice (PD)", "Apr. - Sept.",
                 "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30", "Closed on 25th Dec., 1st Jan.",
                 "Tel. 049 691760", "www.padovanet.info.com", R.drawable.castello_monselice));
 
-        locations.add(new LocationListItem("Castello di Monselice",
-                "via del Castello, Monselice (PD)", "Apr. - Sept.",
-                "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30", "Closed on 25th Dec., 1st Jan.",
-                "Tel. 049 691760", "www.padovanet.info.com", R.drawable.castello_monselice));
+        locations.add(new LocationListItem("Villa Duodo", "Strada delle Sette Chiese, Monselice (PD)",
+                "Apr. - Sept.", "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30",
+                "Closed on 25th Dec., 1st Jan.", "Tel. 049 691760", "www.padovanet.info.com",
+                R.drawable.villa_duodo));
+
+        locations.add(new LocationListItem("Villa Molin", "Strada Battaglia, Albignasego (PD)",
+                "Apr. - Sept.", "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30",
+                "Closed on 25th Dec., 1st Jan.", "Tel. 049 691760", "www.padovanet.info.com",
+                R.drawable.villa_molin));
+
+
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.list);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,

@@ -3,6 +3,42 @@
 
     <item
         is-multidex="false"
+        jar="/Users/Valeria/.android/build-cache/92e320976cf5d386bd8464869139439205440cb7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="/Users/Valeria/AndroidStudioProjects/TourGuideApp/app/build/intermediates/pre-dexed/debug/classes_16dd8c358b4f78a45f6d4e4e5d9f291746289863.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Valeria/.android/build-cache/93911c358cf59b9813f193ab2246672e8c119a8b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/Users/Valeria/AndroidStudioProjects/TourGuideApp/app/build/intermediates/pre-dexed/debug/classes_ac2b359d97ee3c6393338a02cff3a9115d52582a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Valeria/.android/build-cache/72a3667437ca84809eab2143c7e4763049803074/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/Users/Valeria/AndroidStudioProjects/TourGuideApp/app/build/intermediates/pre-dexed/debug/classes_cc476c52b3fe1c46f04ea1e4b8f9ad5bea445940.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Valeria/.android/build-cache/3c209e86895798cdbd4e1bb51363bb7155103525/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Users/Valeria/AndroidStudioProjects/TourGuideApp/app/build/intermediates/pre-dexed/debug/classes_e1187b9e41551ccd6b93476edb6f7a4b4a153239.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/Valeria/.android/build-cache/86d1729f25dff49b7b559c6c464d983415ef461b/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"

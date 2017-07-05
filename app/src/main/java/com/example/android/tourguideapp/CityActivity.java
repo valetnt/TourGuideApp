@@ -27,15 +27,15 @@ public class CityActivity extends AppCompatActivity {
                 "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30", "Closed on 25th Dec., 1st Jan.",
                 "Tel. 049 691760", "www.padovanet.info.com", R.drawable.palazzo_ragione));
 
-        locations.add(new LocationListItem("Palazzo della Ragione", "P.zza delle Erbe, " +
-                "P.zza della Frutta, Padova", "Apr. - Sept.",
+        locations.add(new LocationListItem("Loggia e Odeo Cornaro",
+                "Via Cesarotti, Padova", "Apr. - Sept.",
                 "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30", "Closed on 25th Dec., 1st Jan.",
-                "Tel. 049 691760", "www.padovanet.info.com", R.drawable.palazzo_ragione));
+                "Tel. 049 691760", "www.padovanet.info.com", R.drawable.loggia_cornaro));
 
-        locations.add(new LocationListItem("Palazzo della Ragione", "P.zza delle Erbe, " +
-                "P.zza della Frutta, Padova", "Apr. - Sept.",
+        locations.add(new LocationListItem("Palazzo Dondi dell'Orologio",
+                "P.zza dei Signori, Padova", "Apr. - Sept.",
                 "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30", "Closed on 25th Dec., 1st Jan.",
-                "Tel. 049 691760", "www.padovanet.info.com", R.drawable.palazzo_ragione));
+                "Tel. 049 691760", "www.padovanet.info.com", R.drawable.dondi_orologio));
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.list);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,
