@@ -37,11 +37,6 @@ public class VillasActivity extends AppCompatActivity {
                 "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30", "Closed on 25th Dec., 1st Jan.",
                 "Tel. 049 691760", "www.padovanet.info.com", R.drawable.castello_monselice));
 
-        locations.add(new LocationListItem("Villa Duodo", "Strada delle Sette Chiese, Monselice (PD)",
-                "Apr. - Sept.", "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30",
-                "Closed on 25th Dec., 1st Jan.", "Tel. 049 691760", "www.padovanet.info.com",
-                R.drawable.villa_duodo));
-
         locations.add(new LocationListItem("Villa Molin", "Strada Battaglia, Albignasego (PD)",
                 "Apr. - Sept.", "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30",
                 "Closed on 25th Dec., 1st Jan.", "Tel. 049 691760", "www.padovanet.info.com",
