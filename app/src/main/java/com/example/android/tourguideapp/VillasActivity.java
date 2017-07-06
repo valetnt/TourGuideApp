@@ -18,7 +18,7 @@ public class VillasActivity extends AppCompatActivity {
         setContentView(R.layout.locations);
 
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle(getString(R.string.activity_main_list_txt_item2));
+        actionBar.setTitle(getString(R.string.activity_villas_name));
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         ArrayList<LocationListItem> locations = new ArrayList<>();

@@ -37,7 +37,7 @@
                 android:layout_height="match_parent"
                 android:contentDescription="@string/sightseeing_place_item_img_content_descr"
                 android:scaleType="centerCrop"
-                android:src="@drawable/activity_main_list_item4" />
+                android:src="@drawable/activity_main_list_sightseeing_item" />
 
             <LinearLayout
                 android:layout_width="wrap_content"

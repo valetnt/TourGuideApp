@@ -18,7 +18,7 @@ public class MuseumsActivity extends AppCompatActivity {
         setContentView(R.layout.locations);
 
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle(getString(R.string.activity_main_list_txt_item3));
+        actionBar.setTitle(getString(R.string.activity_museums_name));
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         ArrayList<LocationListItem> locations = new ArrayList<>();
@@ -30,7 +30,7 @@ public class MuseumsActivity extends AppCompatActivity {
         locations.add(new LocationListItem("Cappella degli Scrovegni", "P.zza degli Eremitani, Padova",
                 "Apr. - Sept.", "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30",
                 "Closed on 25th Dec., 1st Jan.", "Tel. 049 691760", "www.padovanet.info.com",
-                R.drawable.activity_main_list_item3));
+                R.drawable.activity_main_list_museums_item));
 
         locations.add(new LocationListItem("Casa-museo del Petrarca", "Arqua' Petrarca (PD)",
                 "Apr. - Sept.", "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30",

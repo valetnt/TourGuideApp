@@ -1,20 +1,20 @@
 <resources>
 
     <string name="app_name">Tour Guide App</string>
-    <string name="activity_city_name">Civic and Religious Buildings</string>
-    <string name="activity_villas_name">Villas and Castles</string>
-    <string name="activity_museums_name">Museums and Gardens</string>
-    <string name="activity_sightseeing_name">Sights you will never forget</string>
+    <string name="activity_city_name">Visitable Sites</string>
+    <string name="activity_villas_name">Countryside</string>
+    <string name="activity_museums_name">Museums</string>
+    <string name="activity_sightseeing_name">Landmarks</string>
 
     <!-- Main Activity (Home) -->
     <string name="cover_img_content_descr">Cover Image</string>
     <string name="flag_icon_content_descr">Italian Flag</string>
     <string name="list_item_img_content_descr">Category Image Thumbnail</string>
-    <string name="activity_main_list_txt_item">Category</string>
-    <string name="activity_main_list_txt_item1">Civic and Religious Buildings</string>
-    <string name="activity_main_list_txt_item2">Villas and Castles</string>
-    <string name="activity_main_list_txt_item3">Museums and Gardens</string>
-    <string name="activity_main_list_txt_item4">What you can&#39;t miss</string>
+    <string name="activity_main_list_item">Category</string>
+    <string name="activity_main_list_city_item">Civic and religious historical sites</string>
+    <string name="activity_main_list_villas_item">Treasures of the countryside</string>
+    <string name="activity_main_list_museums_item">Museums and galleries</string>
+    <string name="activity_main_list_sightseeing_item">Points of interest</string>
     <string name="activity_main_header">Discover the city of Padua</string>
     <string name="activity_main_description">
         The city of Padua (in Italian: Padova) is considered by many to be one of the most
@@ -22,9 +22,11 @@
         Less than 40 km away from Venice,
         Padua has in fact little to envy to her much more famous neighbour and can boast an
         equally rich history and an equally fascinating patrimony of art and architecture.
-        Moreover, the city hosts one of the most ancient Universities in the world.
-        Here you will find a list of the major attractions that are really worth a visit if you
-        happen to come into town.
+        Moreover, the city hosts one of the most ancient universities in the world.
+        Here you will find a list of the major attractions that are really worth a visit.
+        Most of Padua\&#39;s historical sites, museums and monuments are located in the city center,
+        but the countryside has plenty to offer as well, with its medieval towns, towers, castles
+        and luxurious Renaissance villas.
     </string>
 
     <!-- Location Item -->
@@ -38,8 +40,9 @@
     <!-- Sightseeing Activity -->
     <string name="sightseeing_place_section_title">Section Title</string>
     <string name="sightseeing_place_section_description">Section Description</string>
-    <string name="sightseeing_place_section_short_title1">City Center</string>
-    <string name="sightseeing_place_section_short_title2">Countryside</string>
+    <string name="sightseeing_place_section_short_title1">Piazzas</string>
+    <string name="sightseeing_place_section_short_title2">Monuments</string>
+    <string name="sightseeing_place_section_short_title3">Other</string>
 
     <!-- Sightseeing Place Item -->
     <string name="sightseeing_place_item_name">Name of the place</string>

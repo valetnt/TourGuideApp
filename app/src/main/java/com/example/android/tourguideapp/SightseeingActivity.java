@@ -27,7 +27,7 @@ public class SightseeingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sightseeing);
 
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle(getString(R.string.activity_main_list_txt_item4));
+        actionBar.setTitle(getString(R.string.activity_sightseeing_name));
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.container);
@@ -78,6 +78,14 @@ public class SightseeingActivity extends AppCompatActivity {
 
                     return rootView2;
 
+                case 3:
+
+                    View rootView3 = inflater.inflate(R.layout.sightseeing_fragment, container, false);
+
+                    ListView listView3 = (ListView) rootView3.findViewById(R.id.list);
+
+                    return rootView3;
+
                 default:
 
                     return null;
@@ -105,6 +113,8 @@ public class SightseeingActivity extends AppCompatActivity {
                 case 1:
                     return getString(R.string.sightseeing_place_section_short_title2);
 
+                case 2:
+                    return getString(R.string.sightseeing_place_section_short_title3);
                 default:
                     return getString(R.string.sightseeing_place_section_title);
             }
