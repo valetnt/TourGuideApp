@@ -1,56 +1,130 @@
 package com.example.android.tourguideapp;
 
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class VillasActivity extends AppCompatActivity {
+public class SightseeingActivity extends AppCompatActivity {
+
+    private FragmentPagerAdapter mFragmentPagerAdapter;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.locations);
+        setContentView(R.layout.activity_sightseeing);
 
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle(getString(R.string.activity_villas_name));
+        actionBar.setTitle(getString(R.string.activity_sightseeing_name));
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        ArrayList<LocationListItem> locations = new ArrayList<>();
-        locations.add(new LocationListItem("Villa Contarini",
-                "Piazzola sul Brenta (PD)", "Apr. - Sept.",
-                "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30", "Closed on 25th Dec., 1st Jan.",
-                "Tel. 049 691760", "www.padovanet.info.com", R.drawable.villa_contarini));
+        ViewPager viewPager = (ViewPager) findViewById(R.id.container);
 
-        locations.add(new LocationListItem("Villa Pisani",
-                "Riviera del Brenta, Stra (PD)", "Apr. - Sept.",
-                "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30", "Closed on 25th Dec., 1st Jan.",
-                "Tel. 049 691760", "www.padovanet.info.com", R.drawable.villa_pisani));
+        mFragmentPagerAdapter = new MyFragmentPagerAdapter(getSupportFragmentManager());
+        viewPager.setAdapter(mFragmentPagerAdapter);
 
-        locations.add(new LocationListItem("Castello di Monselice",
-                "via del Castello, Monselice (PD)", "Apr. - Sept.",
-                "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30", "Closed on 25th Dec., 1st Jan.",
-                "Tel. 049 691760", "www.padovanet.info.com", R.drawable.castello_monselice));
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(viewPager);
+    }
 
-        locations.add(new LocationListItem("Villa Molin", "Strada Battaglia, Albignasego (PD)",
-                "Apr. - Sept.", "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30",
-                "Closed on 25th Dec., 1st Jan.", "Tel. 049 691760", "www.padovanet.info.com",
-                R.drawable.villa_molin));
+    public static class MyFragment extends Fragment {
 
+        public static final String SECTION = "SECTION";
 
+        public MyFragment() {
+            // empty constructor is required
+        }
 
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.list);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,
-                false));
-        recyclerView.setAdapter(new LocationListAdapter(locations));
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.addItemDecoration(new DividerItemDecoration(this,
-                ((LinearLayoutManager) recyclerView.getLayoutManager()).getOrientation()));
+        public static MyFragment newInstance(int section) {
+
+            Bundle args = new Bundle();
+            args.putInt(SECTION, section);
+            MyFragment fragment = new MyFragment();
+            fragment.setArguments(args);
+            return fragment;
+        }
+
+        @Nullable
+        @Override
+        public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
+                                 @Nullable Bundle savedInstanceState) {
+
+            switch (getArguments().getInt(SECTION)) {
+                case 1:
+
+                    View rootView1 = inflater.inflate(R.layout.sightseeing_fragment, container, false);
+
+                    ListView listView1 = (ListView) rootView1.findViewById(R.id.list);
+
+                    return rootView1;
+
+                case 2:
+
+                    View rootView2 = inflater.inflate(R.layout.sightseeing_fragment, container, false);
+
+                    ListView listView2 = (ListView) rootView2.findViewById(R.id.list);
+
+                    return rootView2;
+
+                case 3:
+
+                    View rootView3 = inflater.inflate(R.layout.sightseeing_fragment, container, false);
+
+                    ListView listView3 = (ListView) rootView3.findViewById(R.id.list);
+
+                    return rootView3;
+
+                default:
+
+                    return null;
+            }
+        }
+    }
+
+    public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
+
+        public MyFragmentPagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
+
+        @Override
+        public int getCount() {
+            return 3;
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            switch (position) {
+                case 0:
+                    return getString(R.string.sightseeing_place_section_short_title1);
+
+                case 1:
+                    return getString(R.string.sightseeing_place_section_short_title2);
+
+                case 2:
+                    return getString(R.string.sightseeing_place_section_short_title3);
+                default:
+                    return getString(R.string.sightseeing_place_section_title);
+            }
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            // positions start from 0, but we want sections to start from 1
+            return MyFragment.newInstance(position + 1);
+        }
+
     }
 }
