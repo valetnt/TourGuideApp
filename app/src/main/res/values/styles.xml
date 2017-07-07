@@ -52,20 +52,20 @@
         <item name="android:textSize">@dimen/font_size_small</item>
     </style>
 
-    <!-- Sightseeing Activity -->
-    <style name="SightseeingActivityTabLayout" parent="Widget.Design.TabLayout">
+    <!-- Tabs Layout -->
+    <style name="CustomTabLayout" parent="Widget.Design.TabLayout">
         <item name="tabBackground">@color/colorTabsBackground</item>
         <item name="tabMode">fixed</item>
         <item name="tabGravity">fill</item>
         <item name="tabIndicatorColor">@color/colorAccent</item>
-        <item name="tabIndicatorHeight">@dimen/sightseeing_activity_tabIndicatorHeight</item>
-        <item name="tabPaddingEnd">@dimen/sightseeing_activity_tabPadding</item>
-        <item name="tabPaddingStart">@dimen/sightseeing_activity_tabPadding</item>
+        <item name="tabIndicatorHeight">@dimen/tabIndicatorHeight</item>
+        <item name="tabPaddingEnd">@dimen/tabPadding</item>
+        <item name="tabPaddingStart">@dimen/tabPadding</item>
         <item name="tabSelectedTextColor">@android:color/white</item>
-        <item name="tabTextAppearance">@style/EatingActivityTabTextAppearance</item>
+        <item name="tabTextAppearance">@style/CustomTabTextAppearance</item>
     </style>
 
-    <style name="EatingActivityTabTextAppearance" parent="TextAppearance.Design.Tab">
+    <style name="CustomTabTextAppearance" parent="TextAppearance.Design.Tab">
         <item name="textAllCaps">true</item>
         <item name="android:textColor">@color/colorTabsText</item>
         <item name="android:textSize">@dimen/font_size_small</item>

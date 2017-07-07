@@ -1,54 +1,63 @@
 package com.example.android.tourguideapp;
 
-
-import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.List;
+import java.util.ArrayList;
 
+public class SightseeingPlacesListAdapter extends
+        RecyclerView.Adapter<SightseeingPlacesListAdapter.ViewHolder> {
 
-public class SightseeingPlacesListAdapter extends ArrayAdapter<SightseeingPlacesListItem> {
+    private ArrayList<SightseeingPlacesListItem> mLocations;
 
-    public SightseeingPlacesListAdapter(@NonNull Context context,
-                                        @NonNull List<SightseeingPlacesListItem> objects) {
-        // We pass 0 as resource ID because we are going to inflate a custom layout
-        super(context, 0, objects);
+    public SightseeingPlacesListAdapter(ArrayList<SightseeingPlacesListItem> locations) {
+        mLocations = locations;
     }
 
-    @NonNull
-    @Override
-    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+    public class ViewHolder extends RecyclerView.ViewHolder {
 
-        // If the view already exists, then recycle it
-        // Else, inflate the layout
-        View rootView = convertView;
-        if (rootView == null) {
-            rootView = LayoutInflater.from(getContext()).inflate(R.layout.sightseeing_place_item,
-                    parent, false);
+        private TextView mName;
+        private TextView mAddress;
+        private TextView mDetails;
+        private TextView mFurtherDetails;
+        private ImageView mImage;
+
+        public ViewHolder(View layoutView) {
+            super(layoutView);
+            mName = (TextView) layoutView.findViewById(R.id.name);
+            mAddress = (TextView) layoutView.findViewById(R.id.address);
+            mDetails = (TextView) layoutView.findViewById(R.id.details);
+            mFurtherDetails = (TextView) layoutView.findViewById(R.id.further_details);
+            mImage = (ImageView) layoutView.findViewById(R.id.image);
         }
+    }
 
-        SightseeingPlacesListItem currentItem = getItem(position);
+    @Override
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        TextView name = (TextView) rootView.findViewById(R.id.name);
-        ImageView image = (ImageView) rootView.findViewById(R.id.image);
-        TextView details = (TextView) rootView.findViewById(R.id.details);
-        TextView address = (TextView) rootView.findViewById(R.id.address);
-        TextView furtherDetails = (TextView) rootView.findViewById(R.id.further_details);
+        View layoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.sightseeing_place_item,
+                parent, false);
+        ViewHolder viewHolder = new ViewHolder(layoutView);
+        return viewHolder;
+    }
 
-        name.setText(currentItem.getName());
-        image.setImageResource(currentItem.getImageID());
-        details.setText(currentItem.getDetails());
-        address.setText(currentItem.getAddress());
-        furtherDetails.setText(currentItem.getFurtherDetails());
+    @Override
+    public void onBindViewHolder(ViewHolder holder, int position) {
 
-        return rootView;
+        holder.mName.setText(mLocations.get(position).getName());
+        holder.mAddress.setText(mLocations.get(position).getAddress());
+        holder.mDetails.setText(mLocations.get(position).getDetails());
+        holder.mFurtherDetails.setText(mLocations.get(position).getFurtherDetails());
+        holder.mImage.setImageResource(mLocations.get(position).getImageID());
+    }
+
+    @Override
+    public int getItemCount() {
+        return mLocations.size();
     }
 }
 

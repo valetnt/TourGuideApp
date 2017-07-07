@@ -11,6 +11,8 @@
     <dimen name="icon_size">24dp</dimen>
     <dimen name="vertical_spacing">8dp</dimen>
     <dimen name="horizontal_spacing">8dp</dimen>
+    <dimen name="tabIndicatorHeight">2dp</dimen>
+    <dimen name="tabPadding">0dp</dimen>
 
     <!-- Main Activity (Home) -->
     <dimen name="list_item_size">80dp</dimen>
@@ -19,19 +21,15 @@
     <dimen name="landscape_cover_img_height">60dp</dimen>
 
     <!-- Location Item -->
-    <dimen name="location_item_size">100dp</dimen>
+    <dimen name="location_item_size">120dp</dimen>
     <dimen name="location_item_padding">6dp</dimen>
     <dimen name="location_item_vertical_spacing">4dp</dimen>
     <dimen name="location_item_horizontal_margin">16dp</dimen>
     <dimen name="location_item_frame_height">22dp</dimen>
     <dimen name="location_item_frame_padding">4dp</dimen>
 
-    <!-- Sightseeing Activity -->
-    <dimen name="sightseeing_activity_tabIndicatorHeight">2dp</dimen>
-    <dimen name="sightseeing_activity_tabPadding">0dp</dimen>
-
     <!-- Sightseeing Place Item -->
-    <dimen name="sightseeing_place_item_size">100dp</dimen>
+    <dimen name="sightseeing_place_item_size">120dp</dimen>
     <dimen name="sightseeing_place_item_padding">6dp</dimen>
     <dimen name="sightseeing_place_item_vertical_spacing">4dp</dimen>
     <dimen name="sightseeing_place_item_horizontal_margin">16dp</dimen>
