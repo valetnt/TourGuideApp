@@ -18,16 +18,16 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayList<MainListItem> mainListItems = new ArrayList<>();
 
-        mainListItems.add(new MainListItem(R.drawable.activity_main_list_city_item,
+        mainListItems.add(new MainListItem(R.drawable.palazzo_ragione,
                 getString(R.string.activity_main_list_city_item)));
 
-        mainListItems.add(new MainListItem(R.drawable.activity_main_list_sightseeing_item,
+        mainListItems.add(new MainListItem(R.drawable.prato_della_valle,
                 getString(R.string.activity_main_list_sightseeing_item)));
 
-        mainListItems.add(new MainListItem(R.drawable.activity_main_list_museums_item,
+        mainListItems.add(new MainListItem(R.drawable.cappella_scrovegni,
                 getString(R.string.activity_main_list_museums_item)));
 
-        mainListItems.add(new MainListItem(R.drawable.activity_main_list_villas_item,
+        mainListItems.add(new MainListItem(R.drawable.villa_contarini,
                 getString(R.string.activity_main_list_villas_item)));
 
         ListView listView = (ListView) findViewById(R.id.list);

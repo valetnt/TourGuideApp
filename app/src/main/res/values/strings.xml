@@ -11,10 +11,10 @@
     <string name="flag_icon_content_descr">Italian Flag</string>
     <string name="list_item_img_content_descr">Category Image Thumbnail</string>
     <string name="activity_main_list_item">Category</string>
-    <string name="activity_main_list_city_item">Civic and religious historical sites</string>
+    <string name="activity_main_list_city_item">Visitable sites</string>
     <string name="activity_main_list_villas_item">Treasures of the countryside</string>
     <string name="activity_main_list_museums_item">Museums and galleries</string>
-    <string name="activity_main_list_sightseeing_item">Points of interest</string>
+    <string name="activity_main_list_sightseeing_item">Piazzas and monuments</string>
     <string name="activity_main_header">Discover the city of Padua</string>
     <string name="activity_main_description">
         The city of Padua (in Italian: Padova) is considered by many to be one of the most
@@ -23,10 +23,13 @@
         Padua has in fact little to envy to her much more famous neighbour and can boast an
         equally rich history and an equally fascinating patrimony of art and architecture.
         Moreover, the city hosts one of the most ancient universities in the world.
-        Here you will find a list of the major attractions that are really worth a visit.
+
         Most of Padua\&#39;s historical sites, museums and monuments are located in the city center,
         but the countryside has plenty to offer as well, with its medieval towns, towers, castles
-        and luxurious Renaissance villas.
+        and luxurious villas.
+
+        Here you will find a list of the major attractions that you can find in the city
+        and its surroundings.
     </string>
 
     <!-- Location Item -->
