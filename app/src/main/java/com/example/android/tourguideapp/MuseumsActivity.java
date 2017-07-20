@@ -24,7 +24,7 @@ public class MuseumsActivity extends AppCompatActivity {
         ArrayList<LocationListItem> locations = new ArrayList<>();
 
         locations.add(new LocationListItem(
-                "Cappella degli Scrovegni",
+                "Scrovegni Chapel",
                 "P.zza degli Eremitani, Padova",
                 "All year", "9.00 - 19.00",
                 "", "(Reservation required)",
@@ -35,7 +35,7 @@ public class MuseumsActivity extends AppCompatActivity {
                 "http://www.google.com/maps/place/Cappella+degli+Scrovegni/@45.4118214,11.8773469,17z/"));
 
         locations.add(new LocationListItem(
-                "Museo degli Eremitani",
+                "Eremitani Museum",
                 "P.zza degli Eremitani, Padova",
                 "Winter", "9.00 - 18.00",
                 "Summer", "9.00 - 19.00",
@@ -123,7 +123,7 @@ public class MuseumsActivity extends AppCompatActivity {
                 "http://www.google.com/maps/place/Palazzo+Zabarella/@45.4059127,11.8771233,17z/"));
 
         locations.add(new LocationListItem(
-                "Casa museo del Petrarca",
+                "Casa del Petrarca",
                 "Arquà Petrarca (PD)",
                 "Mar - Oct", "9.00 - 12.30, 15.00 - 19.00",
                 "Nov - Feb", "9.30 - 12.30, 14.30 - 17.30",

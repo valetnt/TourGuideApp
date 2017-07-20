@@ -36,8 +36,8 @@ public class SightseeingActivity extends AppCompatActivity {
         locations.add(new SightseeingPlacesListItem(
                 "Piazza delle Erbe",
                 "P.zza delle Erbe, Padova",
-                "It is one of the two squares surrounding Palazzo della Ragione.",
-                "One of main meeting points for the local youth, " +
+                "It is one of the two squares surrounding the 13th-century Palazzo della Ragione.",
+                "One of the main meeting points for the local youth, " +
                         "it hosts open-air markets every day and a Christmas market.",
                 R.drawable.piazza_erbe,
                 "http://www.google.com/maps/place/Pam+local+Piazza+delle+Erbe/@45.4067902,11.8741515,18z/"));
@@ -45,7 +45,7 @@ public class SightseeingActivity extends AppCompatActivity {
         locations.add(new SightseeingPlacesListItem(
                 "Piazza della Frutta",
                 "P.zza della Frutta, Padova",
-                "It is one of the two squares surrounding Palazzo della Ragione.",
+                "It is one of the two squares surrounding the 13th-century Palazzo della Ragione.",
                 "It hosts open-air markets every day and a Christmas market.",
                 R.drawable.piazza_frutta,
                 "http://www.google.com/maps/place/Piazza+della+Frutta/@45.4076459,11.8732533,17z/"));
@@ -54,7 +54,8 @@ public class SightseeingActivity extends AppCompatActivity {
                 "Giardini dell'Arena",
                 "Corso Garibaldi, Padova",
                 "The garden is built on the inner side of the city medieval walls, and is" +
-                        " surrounded by Piovego canal.",
+                        " surrounded by Piovego canal, the waterway " +
+                        "connecting Padua to the lagoon of Venice.",
                 "The garden also hosts the Scrovegni Chapel and the ruins of a Roman arena.",
                 R.drawable.giardini_arena,
                 "http://www.google.com/maps/place/Giardini+dell'Arena/@45.4123686,11.8777603,17z/"));
@@ -63,13 +64,13 @@ public class SightseeingActivity extends AppCompatActivity {
                 "Piazza dei Signori",
                 "P.zza dei Signori, Padova",
                 "In the 14th century, the Venetians restored the square to be the fifth main civic" +
-                        "area for tournament play, concerts and music festivals.",
-                "The square is dominated by the famous Clock Tower.",
+                        " area for tournament plays and public festivals.",
+                "The square is dominated by a 15th-century clock tower.",
                 R.drawable.piazza_signori,
                 "http://www.google.com/maps/place/Piazza+dei+Signori/@45.4078463,11.8713521,17z/"));
 
         locations.add(new SightseeingPlacesListItem(
-                "Gattamelata monument",
+                "Gattamelata Monument",
                 "P.zza del Santo, Padova",
                 "Equestrian statue made by Donatello between 1447 and 1453 as a funeral monument " +
                         "for the Reinsassance 'condottiero' Erasmo of Narni.",
@@ -91,7 +92,7 @@ public class SightseeingActivity extends AppCompatActivity {
                 "Around via Marsala, Padova",
                 "Atmospheric corner of the city center, with its tall houses, narrow streets " +
                         "and typical taverns. It hosted the Jews of Padua between 1603 and 1797.",
-                "The 16th century synagogue is visitable on demand.",
+                "The 16th-century synagogue is visitable on demand.",
                 R.drawable.ghetto,
                 "http://www.google.com/maps/place/Museo+della+Padova+Ebraica/@45.4060828,11.8737142,17z/"));
 

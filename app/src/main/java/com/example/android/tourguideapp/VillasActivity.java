@@ -125,7 +125,7 @@ public class VillasActivity extends AppCompatActivity {
 
                     locations1.add(new LocationListItem(
                             "Villa Capra 'La Rotonda'",
-                            "Chiesanuova (PD)",
+                            "Vicenza (VI)",
                             "Interiors", "Mar - Nov on Wed, Sat",
                             "Garden", "10.00 - 12.00, 15.00 - 17.00",
                             "Closed on Mondays, Dec 25, Jan 1",
@@ -163,6 +163,17 @@ public class VillasActivity extends AppCompatActivity {
                             R.drawable.catajo,
                             "http://www.google.com/maps/place/Castello+del+Catajo/@45.2963558,11.7871943,17z/"));
 
+                    locations2.add(new LocationListItem(
+                            "Castello di San Pelagio - Museum of Flight",
+                            "Due Carrare (PD)",
+                            "Mar - Nov", "10.00 - 13.00, 14.30 - 18.30",
+                            "Dec - Feb", "10.00 - 17.00",
+                            "Closed on Mon, Tue, Wed",
+                            "Tel. 049 9125008",
+                            "http://www.castellosanpelagio.it/",
+                            R.drawable.castello_san_pelagio,
+                            "http://www.google.com/maps/place/Castello+di+San+Pelagio+-+Museo+del+Volo/@45.3142804,11.8196743,17z/"));
+
                    locations2.add(new LocationListItem(
                             "Arquà Petrarca",
                             "Arquà Petrarca (PD)",
@@ -186,7 +197,18 @@ public class VillasActivity extends AppCompatActivity {
                             "http://www.google.com/maps/place/Castello+Cini+Monselice/@45.2417344,11.7506397,17z/"));
 
                     locations2.add(new LocationListItem(
-                            "Praglia Abbey",
+                            "Route of the Seven Churches and Villa Duodo",
+                            "Monselice (PD)",
+                            "Ped.", "no access restrictions",
+                            "Cars", "not admitted",
+                            "Villa Duodo can only be seen from the outside",
+                            "Tel. 0429 72468",
+                            "http://www.castellodimonselice.it/",
+                            R.drawable.sette_chiese,
+                            "http://www.google.com/maps/place/Villa+Duodo/@45.240962,11.7565661,17z/"));
+
+                    locations2.add(new LocationListItem(
+                            "Abbey of Praglia",
                             "Praglia (PD)",
                             "Winter", "14.30 - 16.30",
                             "Summer", "15.00 - 17.00",
@@ -207,17 +229,6 @@ public class VillasActivity extends AppCompatActivity {
                             R.drawable.castello_san_zeno,
                             "http://www.google.com/maps/place/Castello+di+S.+Zeno/@45.2309467,11.4666716,17z/"));
 
-                    locations2.add(new LocationListItem(
-                            "Castello di San Pelagio - Museum of Flight",
-                            "Due Carrare (PD)",
-                            "Mar - Nov", "10.00 - 13.00, 14.30 - 18.30",
-                            "Dec - Feb", "10.00 - 17.00",
-                            "Closed on Mon, Tue, Wed",
-                            "Tel. 049 9125008",
-                            "http://www.castellosanpelagio.it/",
-                            R.drawable.castello_san_pelagio,
-                            "http://www.google.com/maps/place/Castello+di+San+Pelagio+-+Museo+del+Volo/@45.3142804,11.8196743,17z/"));
-
                     recyclerView2.setLayoutManager(new LinearLayoutManager(getContext(),
                             LinearLayoutManager.VERTICAL, false));
                     recyclerView2.setAdapter(new LocationListAdapter(locations2));
@@ -235,6 +246,17 @@ public class VillasActivity extends AppCompatActivity {
                     RecyclerView recyclerView3 = (RecyclerView) rootView3.findViewById(R.id.list);
 
                     ArrayList<LocationListItem> locations3 = new ArrayList<>();
+
+                    locations3.add(new LocationListItem(
+                            "Villa Cornaro",
+                            "Piombino Dese (PD)",
+                            "Individuals", "May - Sep, 15:30 - 18:00",
+                            "Groups (min. 10 pers.)", "Throughout the year on reservation",
+                            "Booking is required for groups",
+                            "Tel. 049 9365017",
+                            "http://www.boglewood.com/palladio/cornaro.html",
+                            R.drawable.villa_cornaro,
+                            "http://www.google.com/maps/place/Villa+Cornaro/@45.5338523,11.790357,10.17z/"));
 
                     locations3.add(new LocationListItem(
                             "Villa Contarini",

@@ -24,8 +24,7 @@ public class CityActivity extends AppCompatActivity {
         ArrayList<LocationListItem> locations = new ArrayList<>();
         locations.add(new LocationListItem(
                 "Palazzo della Ragione",
-                "P.zza delle Erbe, " +
-                "P.zza della Frutta, Padova",
+                "P.zza delle Erbe, Padova",
                 "Winter", "9.00 - 18.00",
                 "Summer", "9.00 - 19.00",
                 "Closed on Mondays",
@@ -46,7 +45,7 @@ public class CityActivity extends AppCompatActivity {
                 "http://www.google.com/maps/place/Loggia+e+Odeo+Cornaro/@45.4022071,11.8811006,16.88z/"));
 
         locations.add(new LocationListItem(
-                "Torre dell'Orologio",
+                "Dondi Clock Tower",
                 "P.zza dei Signori, Padova",
                 "Individuals", "Fri, Sat 9.30 - 11.45",
                 "Groups", "Wed, Fri, Sat 9.30 - 11.45",
@@ -59,7 +58,7 @@ public class CityActivity extends AppCompatActivity {
         locations.add(new LocationListItem(
                 "Cathedral and Baptistery",
                 "P.zza Duomo, Padova",
-                "Every day", "10.00 - 18.0",
+                "Every day", "10.00 - 18.00",
                 "Groups", "booking is recommended",
                 "Closed on Dec 25, Jan 1, Easter",
                 "Tel. 392 656914",
