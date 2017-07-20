@@ -37,7 +37,6 @@
     <style name="LocationItemTextView_details_bold" parent="AppTheme">
         <item name="android:textColor">@color/colorTextDarker</item>
         <item name="android:textSize">@dimen/font_size_small</item>
-        <item name="android:paddingTop">@dimen/location_item_padding</item>
         <item name="android:textStyle">bold</item>
     </style>
 
@@ -50,6 +49,7 @@
     <style name="LocationItemFrame" parent="AppTheme">
         <item name="android:textColor">@color/colorCardText</item>
         <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:layout_marginRight">@dimen/location_item_frame_padding</item>
     </style>
 
     <!-- Tabs Layout -->
@@ -81,7 +81,6 @@
     <style name="SightseeingPlaceItemTextView_details_bold" parent="AppTheme">
         <item name="android:textColor">@color/colorTextDarker</item>
         <item name="android:textSize">@dimen/font_size_small</item>
-        <item name="android:paddingTop">@dimen/sightseeing_place_item_padding</item>
         <item name="android:textStyle">bold</item>
     </style>
 

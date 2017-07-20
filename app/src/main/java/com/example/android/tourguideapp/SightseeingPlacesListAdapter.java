@@ -1,5 +1,7 @@
 package com.example.android.tourguideapp;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,6 +27,7 @@ public class SightseeingPlacesListAdapter extends
         private TextView mDetails;
         private TextView mFurtherDetails;
         private ImageView mImage;
+        private View mMapsButton;
 
         public ViewHolder(View layoutView) {
             super(layoutView);
@@ -33,6 +36,7 @@ public class SightseeingPlacesListAdapter extends
             mDetails = (TextView) layoutView.findViewById(R.id.details);
             mFurtherDetails = (TextView) layoutView.findViewById(R.id.further_details);
             mImage = (ImageView) layoutView.findViewById(R.id.image);
+            mMapsButton = layoutView.findViewById(R.id.mapsButton);
         }
     }
 
@@ -41,18 +45,28 @@ public class SightseeingPlacesListAdapter extends
 
         View layoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.sightseeing_place_item,
                 parent, false);
-        ViewHolder viewHolder = new ViewHolder(layoutView);
-        return viewHolder;
+        return new ViewHolder(layoutView);
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(final ViewHolder holder, int position) {
 
         holder.mName.setText(mLocations.get(position).getName());
         holder.mAddress.setText(mLocations.get(position).getAddress());
         holder.mDetails.setText(mLocations.get(position).getDetails());
         holder.mFurtherDetails.setText(mLocations.get(position).getFurtherDetails());
         holder.mImage.setImageResource(mLocations.get(position).getImageID());
+
+        holder.mMapsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent seeInMaps = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse(mLocations.get(holder.getAdapterPosition()).getMapsLink()));
+                if (seeInMaps.resolveActivity(v.getContext().getPackageManager()) != null) {
+                    v.getContext().startActivity(seeInMaps);
+                }
+            }
+        });
     }
 
     @Override

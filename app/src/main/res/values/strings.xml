@@ -8,7 +8,7 @@
 
     <!-- Main Activity (Home) -->
     <string name="cover_img_content_descr">Cover Image</string>
-    <string name="flag_icon_content_descr">Italian Flag</string>
+    <string name="flag_icon_content_descr">City coat of arms</string>
     <string name="list_item_img_content_descr">Category Image Thumbnail</string>
     <string name="activity_main_list_item">Category</string>
     <string name="activity_main_list_city_item">Visitable sites</string>
@@ -16,19 +16,6 @@
     <string name="activity_main_list_museums_item">Museums and galleries</string>
     <string name="activity_main_list_sightseeing_item">Piazzas and monuments</string>
     <string name="activity_main_header">Discover the city of Padua</string>
-    <string name="activity_main_description">
-        The city of Padua (in Italian: Padova) is considered by many to be one of the most
-        beautiful cities in Northern Italy.
-        Less than 40 km away from Venice,
-        Padua has little to envy to its much more famous neighbour and can boast an
-        equally rich history and an equally fascinating patrimony of art and architecture.
-        Moreover, the city hosts one of the most ancient universities in the world.
-        Most of Padua\&#39;s historical sites, museums and monuments are located in the city center,
-        but the countryside has plenty to offer as well, with its medieval towns, castles
-        and luxurious villas.
-        Here is a list of the major attractions that you can find in the city
-        and its surroundings.
-    </string>
 
     <!-- Location Item -->
     <string name="location_img_content_descr">Thumbnail</string>
@@ -41,14 +28,14 @@
     <!-- Villas Tabbed Activity -->
     <string name="villas_section_title">Section Title</string>
     <string name="villas_section_description">Section Description</string>
-    <string name="villas_section_short_title1">East</string>
-    <string name="villas_section_short_title2">West</string>
-    <string name="villas_section_short_title3">South</string>
-    <string name="villas_section_short_title4">North</string>
+    <string name="villas_section_short_title0">East</string>
+    <string name="villas_section_short_title1">West</string>
+    <string name="villas_section_short_title2">South</string>
+    <string name="villas_section_short_title3">North</string>
 
     <!-- Sightseeing Place Item -->
     <string name="sightseeing_place_item_name">Name of the place</string>
-    <string name="sightseeing_place_item_details">Interesting to know:</string>
+    <string name="sightseeing_place_item_details">Interesting facts:</string>
     <string name="sightseeing_place_item_nearby">Nearby:</string>
     <string name="sightseeing_place_item_img_content_descr">Thumbnail</string>
     <string name="sightseeing_place_item_icon_descr">Maps Icon</string>

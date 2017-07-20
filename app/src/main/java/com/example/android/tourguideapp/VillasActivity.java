@@ -21,8 +21,6 @@ import java.util.ArrayList;
 
 public class VillasActivity extends AppCompatActivity {
 
-    private FragmentPagerAdapter mFragmentPagerAdapter;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,8 +32,9 @@ public class VillasActivity extends AppCompatActivity {
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.container);
 
-        mFragmentPagerAdapter = new MyFragmentPagerAdapter(getSupportFragmentManager());
-        viewPager.setAdapter(mFragmentPagerAdapter);
+        FragmentPagerAdapter fragmentPagerAdapter =
+                new MyFragmentPagerAdapter(getSupportFragmentManager());
+        viewPager.setAdapter(fragmentPagerAdapter);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
@@ -64,6 +63,48 @@ public class VillasActivity extends AppCompatActivity {
                                  @Nullable Bundle savedInstanceState) {
 
             switch (getArguments().getInt(SECTION)) {
+
+                // East
+                case 0:
+
+                    View rootView0 = inflater.inflate(R.layout.villas_fragment, container, false);
+                    RecyclerView recyclerView0 = (RecyclerView) rootView0.findViewById(R.id.list);
+
+                    ArrayList<LocationListItem> locations0 = new ArrayList<>();
+
+                    locations0.add(new LocationListItem(
+                            "Villa Pisani",
+                            "Riviera del Brenta, Stra (VE)",
+                            "Apr - Sep", "9.00 - 20.00",
+                            "Oct - Mar", "9.00 - 17.00",
+                            "Closed on Dec 25, Jan 1",
+                            "Tel. 049 502074",
+                            "http://www.villapisani.beniculturali.it/",
+                            R.drawable.villa_pisani,
+                            "http://www.google.com/maps/place/Villa+Pisani+Museo+Nazionale/@45.408318,12.0103762,17z/"));
+
+                    locations0.add(new LocationListItem(
+                            "Villa Breda",
+                            "Ponte di Brenta (PD)",
+                            "Events", "see website",
+                            "Visits", "see website",
+                            "Also available for special events",
+                            "Tel. 338 1446946",
+                            "http://www.viviamovillabreda.it/",
+                            R.drawable.villa_breda,
+                            "http://www.google.com/maps/place/Museo+Di+Villa+Breda/@45.4259087,11.9492713,16.98z/"));
+
+                    recyclerView0.setLayoutManager(new LinearLayoutManager(getContext(),
+                            LinearLayoutManager.VERTICAL, false));
+                    recyclerView0.setAdapter(new LocationListAdapter(locations0));
+                    recyclerView0.setHasFixedSize(true);
+                    recyclerView0.setItemAnimator(new DefaultItemAnimator());
+                    recyclerView0.addItemDecoration(new DividerItemDecoration(getContext(),
+                            ((LinearLayoutManager) recyclerView0.getLayoutManager()).getOrientation()));
+
+                    return rootView0;
+
+                // West
                 case 1:
 
                     View rootView1 = inflater.inflate(R.layout.villas_fragment, container, false);
@@ -71,10 +112,27 @@ public class VillasActivity extends AppCompatActivity {
 
                     ArrayList<LocationListItem> locations1 = new ArrayList<>();
 
-                    locations1.add(new LocationListItem("Villa Pisani", "Riviera del Brenta, Stra (VE)",
-                            "Apr. - Sept.", "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30",
-                            "Closed on 25th Dec., 1st Jan.", "Tel. 049 691760",
-                            "www.padovanet.info.com", R.drawable.villa_pisani));
+                    locations1.add(new LocationListItem(
+                            "Villa Emo Capodilista",
+                            "Selvazzano Dentro (PD)",
+                            "Reservation", "required, min. 15 people",
+                            "Specials", "food and wine tasting",
+                            "Open all year round",
+                            "Tel. 049 691760",
+                            "http://villevenetetour.it/ville-venete/villa-emo-capodilista-la-montecchia",
+                            R.drawable.villa_emo,
+                            "http://www.google.com/maps/place/Villa+Emo+Capodilista/@45.3852377,11.7635933,17z/"));
+
+                    locations1.add(new LocationListItem(
+                            "Villa Capra 'La Rotonda'",
+                            "Chiesanuova (PD)",
+                            "Interiors", "Mar - Nov on Wed, Sat",
+                            "Garden", "10.00 - 12.00, 15.00 - 17.00",
+                            "Closed on Mondays, Dec 25, Jan 1",
+                            "Tel. 333 6409237",
+                            "http://www.villalarotonda.it/",
+                            R.drawable.villa_capra,
+                            "http://www.google.com/maps/place/Villa+la+Rotonda/@45.5315283,11.5580812,17z/"));
 
                     recyclerView1.setLayoutManager(new LinearLayoutManager(getContext(),
                             LinearLayoutManager.VERTICAL, false));
@@ -86,6 +144,7 @@ public class VillasActivity extends AppCompatActivity {
 
                     return rootView1;
 
+                // South
                 case 2:
 
                     View rootView2 = inflater.inflate(R.layout.villas_fragment, container, false);
@@ -93,11 +152,71 @@ public class VillasActivity extends AppCompatActivity {
 
                     ArrayList<LocationListItem> locations2 = new ArrayList<>();
 
-                    locations2.add(new LocationListItem("Villa Emo Capodilista",
-                            "Selvazzano Dentro (PD)", "Apr. - Sept.",
-                            "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30",
-                            "Closed on 25th Dec., 1st Jan.", "Tel. 049 691760",
-                            "www.padovanet.info.com", R.drawable.villa_emo));
+                    locations2.add(new LocationListItem(
+                            "Castello del Catajo",
+                            "Battaglia Terme (PD)",
+                            "Apr - Aug", "15.00 - 19.00",
+                            "Mar, Sep - Nov", "14.30 - 18.30",
+                            "Closed on Mon, Wed, Sat, public holidays",
+                            "Tel. 349 934 7190",
+                            "http://www.castellodelcatajo.it/",
+                            R.drawable.catajo,
+                            "http://www.google.com/maps/place/Castello+del+Catajo/@45.2963558,11.7871943,17z/"));
+
+                   locations2.add(new LocationListItem(
+                            "Arquà Petrarca",
+                            "Arquà Petrarca (PD)",
+                            "Ped.", "no access restrictions",
+                            "Cars", "limits 8.00 - 20.00 on holidays",
+                            "Parking available at city entrances",
+                            "Tel. 0429 718294",
+                            "http://www.arquapetrarca.com",
+                            R.drawable.arqua,
+                            "http://www.google.com/maps/place/35032+Arquà+Petrarca+PD,+Italia/@45.2689888,11.7096588,15z/"));
+
+                    locations2.add(new LocationListItem(
+                            "Castello di Monselice",
+                            "Monselice (PD)",
+                            "Mar - Oct", "9.00 - 11.00, 15.00 - 17.00",
+                            "Nov - Feb", "10.00 - 11.00, 14.00 - 15.00",
+                            "Booking required in January",
+                            "Tel. 0429 72931",
+                            "http://www.castellodimonselice.it/",
+                            R.drawable.castello_monselice,
+                            "http://www.google.com/maps/place/Castello+Cini+Monselice/@45.2417344,11.7506397,17z/"));
+
+                    locations2.add(new LocationListItem(
+                            "Praglia Abbey",
+                            "Praglia (PD)",
+                            "Winter", "14.30 - 16.30",
+                            "Summer", "15.00 - 17.00",
+                            "Closed on all religious holidays",
+                            "Tel. 049 9999300",
+                            "http://www.praglia.it/wordpress/?page_id=210",
+                            R.drawable.praglia,
+                            "http://www.google.com/maps/place/Abbazia+di+Praglia/@45.3567469,11.7267002,14.11z/"));
+
+                    locations2.add(new LocationListItem(
+                            "Castello di S. Zeno",
+                            "Montagnana (PD)",
+                            "Apr - Oct", "9.30 - 12.30, 16.00 - 19.00",
+                            "Nov - Mar", "9.30 - 12.30, 15.00 - 18.00,",
+                            "Closed on Mon, Tue morning, Dec 25, Jan 1",
+                            "Tel. 0429 81320",
+                            "http://www.turismopadova.it/it/pointofinterest/castel-san-zeno-mastio-di-ezzelino",
+                            R.drawable.castello_san_zeno,
+                            "http://www.google.com/maps/place/Castello+di+S.+Zeno/@45.2309467,11.4666716,17z/"));
+
+                    locations2.add(new LocationListItem(
+                            "Castello di San Pelagio - Museum of Flight",
+                            "Due Carrare (PD)",
+                            "Mar - Nov", "10.00 - 13.00, 14.30 - 18.30",
+                            "Dec - Feb", "10.00 - 17.00",
+                            "Closed on Mon, Tue, Wed",
+                            "Tel. 049 9125008",
+                            "http://www.castellosanpelagio.it/",
+                            R.drawable.castello_san_pelagio,
+                            "http://www.google.com/maps/place/Castello+di+San+Pelagio+-+Museo+del+Volo/@45.3142804,11.8196743,17z/"));
 
                     recyclerView2.setLayoutManager(new LinearLayoutManager(getContext(),
                             LinearLayoutManager.VERTICAL, false));
@@ -109,6 +228,7 @@ public class VillasActivity extends AppCompatActivity {
 
                     return rootView2;
 
+                // North
                 case 3:
 
                     View rootView3 = inflater.inflate(R.layout.villas_fragment, container, false);
@@ -116,30 +236,27 @@ public class VillasActivity extends AppCompatActivity {
 
                     ArrayList<LocationListItem> locations3 = new ArrayList<>();
 
-                    locations3.add(new LocationListItem("Villa Molin", "Mandriola, Albignasego (PD)",
-                            "Apr. - Sept.", "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30",
-                            "Closed on 25th Dec., 1st Jan.", "Tel. 049 691760",
-                            "www.padovanet.info.com", R.drawable.villa_molin));
+                    locations3.add(new LocationListItem(
+                            "Villa Contarini",
+                            "Piazzola sul Brenta (PD)",
+                            "Mar - Oct", "9.00 - 19.00",
+                            "Nov - Feb", "10.00 - 16.00",
+                            "Closed on Wed, Dec 25, Jan 1",
+                            "Tel. 049 5590347",
+                            "http://www.villacontarini.eu/",
+                            R.drawable.villa_contarini,
+                            "http://www.google.com/maps/place/Villa+Contarini/@45.5440747,11.7830636,17z/"));
 
-                    locations3.add(new LocationListItem("Castello del Catajo", "Battaglia Terme (PD)",
-                            "Apr. - Sept.", "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30",
-                            "Closed on 25th Dec., 1st Jan.", "Tel. 049 691760",
-                            "www.padovanet.info.com", R.drawable.catajo));
-
-                    locations3.add(new LocationListItem("Villa Duodo", "Monselice (PD)",
-                            "Apr. - Sept.", "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30",
-                            "Closed on 25th Dec., 1st Jan.", "Tel. 049 691760",
-                            "www.padovanet.info.com", R.drawable.villa_duodo));
-
-                    locations3.add(new LocationListItem("Santuario delle Sette Chiese", "Monselice (PD)",
-                            "Apr. - Sept.", "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30",
-                            "Closed on 25th Dec., 1st Jan.", "Tel. 049 691760",
-                            "www.padovanet.info.com", R.drawable.sette_chiese));
-
-                    locations3.add(new LocationListItem("Casa del Petrarca", "Arqua Petrarca (PD)",
-                            "Apr. - Sept.", "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30",
-                            "Closed on 25th Dec., 1st Jan.", "Tel. 049 691760",
-                            "www.padovanet.info.com", R.drawable.casa_museo_petrarca));
+                    locations3.add(new LocationListItem(
+                            "Cittadella city walls",
+                            "Cittadella (PD)",
+                            "Apr - Sep", "9.00 - 19.00",
+                            "Oct - Mar", "9.00 - 17.00",
+                            "Closed on Dec 25",
+                            "Tel. 049 9404485",
+                            "http://www.visitcittadella.it/",
+                            R.drawable.cittadella,
+                            "http://www.google.com/maps/place/35013+Cittadella+PD,+Italia/@45.6443287,11.7548612,13.29z/"));
 
                     recyclerView3.setLayoutManager(new LinearLayoutManager(getContext(),
                             LinearLayoutManager.VERTICAL, false));
@@ -150,28 +267,6 @@ public class VillasActivity extends AppCompatActivity {
                             ((LinearLayoutManager) recyclerView3.getLayoutManager()).getOrientation()));
 
                     return rootView3;
-
-                case 4:
-
-                    View rootView4 = inflater.inflate(R.layout.villas_fragment, container, false);
-                    RecyclerView recyclerView4 = (RecyclerView) rootView4.findViewById(R.id.list);
-
-                    ArrayList<LocationListItem> locations4 = new ArrayList<>();
-
-                    locations4.add(new LocationListItem("Villa Contarini", "Piazzola sul Brenta (PD)",
-                            "Apr. - Sept.", "8.30 - 18.30", "Oct. - Mar.", "9.30 - 17.30",
-                            "Closed on 25th Dec., 1st Jan.", "Tel. 049 691760",
-                            "www.padovanet.info.com", R.drawable.villa_contarini));
-
-                    recyclerView4.setLayoutManager(new LinearLayoutManager(getContext(),
-                            LinearLayoutManager.VERTICAL, false));
-                    recyclerView4.setAdapter(new LocationListAdapter(locations4));
-                    recyclerView4.setHasFixedSize(true);
-                    recyclerView4.setItemAnimator(new DefaultItemAnimator());
-                    recyclerView4.addItemDecoration(new DividerItemDecoration(getContext(),
-                            ((LinearLayoutManager) recyclerView4.getLayoutManager()).getOrientation()));
-
-                    return rootView4;
 
 
                 default:
@@ -196,16 +291,16 @@ public class VillasActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return getString(R.string.villas_section_short_title1);
+                    return getString(R.string.villas_section_short_title0);
 
                 case 1:
-                    return getString(R.string.villas_section_short_title2);
+                    return getString(R.string.villas_section_short_title1);
 
                 case 2:
-                    return getString(R.string.villas_section_short_title3);
+                    return getString(R.string.villas_section_short_title2);
 
                 case 3:
-                    return getString(R.string.villas_section_short_title4);
+                    return getString(R.string.villas_section_short_title3);
 
                 default:
                     return getString(R.string.villas_section_title);
@@ -214,8 +309,7 @@ public class VillasActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-            // positions start from 0, but we want sections to start from 1
-            return MyFragment.newInstance(position + 1);
+            return MyFragment.newInstance(position);
         }
 
     }

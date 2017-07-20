@@ -13,6 +13,7 @@
     <dimen name="horizontal_spacing">8dp</dimen>
     <dimen name="tabIndicatorHeight">2dp</dimen>
     <dimen name="tabPadding">0dp</dimen>
+    <dimen name="touchTargetHeight">48dp</dimen>
 
     <!-- Main Activity (Home) -->
     <dimen name="list_item_size">80dp</dimen>

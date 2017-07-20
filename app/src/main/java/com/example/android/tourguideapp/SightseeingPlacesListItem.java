@@ -8,15 +8,17 @@ public class SightseeingPlacesListItem {
     private String mAddress;
     private String mFurtherDetails;
     private int mImageID;
+    private String mMapsLink;
 
     public SightseeingPlacesListItem(String name, String address, String details,
-                                     String furtherDetails, int image) {
+                                     String furtherDetails, int image, String link) {
 
         mName = name;
         mDetails = details;
         mAddress = address;
         mFurtherDetails = furtherDetails;
         mImageID = image;
+        mMapsLink = link;
     }
 
     public String getName() {
@@ -41,5 +43,7 @@ public class SightseeingPlacesListItem {
     public int getImageID() {
         return mImageID;
     }
+
+    public String getMapsLink() { return mMapsLink; }
 
 }

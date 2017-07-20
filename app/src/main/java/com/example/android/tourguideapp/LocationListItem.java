@@ -12,11 +12,12 @@ public class LocationListItem {
     private String mContact1;
     private String mContact2;
     private int mImageID;
+    private String mMapsLink;
 
     public LocationListItem(String name, String address, String openings_header_1,
                             String openings_content_1, String openings_header_2,
                             String openings_content_2, String furtherDetails, String contact_1,
-                            String contact_2, int image) {
+                            String contact_2, int image, String link) {
 
         mName = name;
         mAddress = address;
@@ -28,6 +29,7 @@ public class LocationListItem {
         mContact2 = contact_2;
         mFurtherDetails = furtherDetails;
         mImageID = image;
+        mMapsLink = link;
     }
 
     public String getName() {
@@ -78,5 +80,7 @@ public class LocationListItem {
     public int getImageID() {
         return mImageID;
     }
+
+    public String getMapsLink() { return mMapsLink; }
 
 }
