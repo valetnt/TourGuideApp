@@ -94,7 +94,6 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginBottom="@dimen/sightseeing_place_item_vertical_spacing"
             android:layout_marginEnd="@dimen/sightseeing_place_item_horizontal_margin"
             android:layout_marginLeft="@dimen/sightseeing_place_item_horizontal_margin"
             android:layout_marginRight="@dimen/sightseeing_place_item_horizontal_margin"
